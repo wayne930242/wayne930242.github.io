@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>偉恩與咖啡</title>
   <icon>https://www.gravatar.com/avatar/0cda4a063ab05e0cb4ef30f0c5b1cf92</icon>
-  <subtitle>洪偉的部落格</subtitle>
+  <subtitle>哲學、TRPG、雜談</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wayneh.tw/"/>
@@ -10,7 +10,7 @@
   <id>http://wayneh.tw/</id>
   
   <author>
-    <name>洪偉 WeiHung</name>
+    <name>洪偉 Wei Hung</name>
     <email>wayne930242@gmail.com</email>
   </author>
   
