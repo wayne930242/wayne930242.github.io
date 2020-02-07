@@ -314,5 +314,5 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   .comment .gt-btn-public .gt-btn-text:after{content:"";}
 }
 .content strong{
-  background:rgba(79, 199, 255, 0.575);
+  background:rgb(187, 233, 255);
 }
