@@ -34,7 +34,7 @@ body.mu .image-logo {background-color:black;}
 #post0 {width:28%;position:absolute;top:42%;left:10%;}
 #post0 p:first-child {color:#fff;font-size:12px;}
 #post0 h2 {font-size:28px;margin-top:15px;}
-#post0 h2 a {color:#fff;}
+#post0 h2 a {color:#fff;font-weight: 700;}
 #post0 h2 + p {color:#fff;font-size:14px;margin-top:30px;}
 .post {margin:100px auto 0;width:1200px;position:relative;}
 .post > a {display:inline-block;width:680px;height:440px;overflow:hidden;position:relative;z-index:3;}
@@ -304,7 +304,7 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   #container:before {display:none;}
   #post0 h2 {text-align:left;margin:0 10px 0 0;}
   #post0 h2 + p {text-align:left;margin:10px 20px 0 0;color:#f2f2f2;font-size:14px;}
-  #post0 h2 a {color:#fff;font-weight: 700;}
+  #post0 h2 a {color:#fff;}
   #post0 .summary {display:none;}
   .stuff span {margin-right:10px;}
   .stuff span:first-child {display:none;}
