@@ -1,4 +1,4 @@
-body,div,h1,h2,h3,h4,h5,h6,p,ul,li,strong {margin:0;padding:0;font-weight:normal;list-style:none;}
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li,strong {margin:0;padding:0;list-style:none;}
 html {-webkit-text-size-adjust:100%;}
 html,body {-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;background:#fff;}
 h1,h2,h3,h4,h5 {font-family: 'Noto Serif TC', serif;}
@@ -195,7 +195,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .content {margin-top:50px;font-size:15px;line-height:2;color:#232323;}
 .content h1 {font-size:34px;font-weight:700;}
 .content h2 {font-size:24px;font-weight:700;}
-.content h2:after{content:' ';display:block;border:0.25px solid #d0d0d0;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);}
+/* .content h2:after{content:' ';display:block;border:0.25px solid #d0d0d0;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);}*/
 .content h3 {font-size:20px;font-weight:700;}
 .content h4 {font-size:18px;font-weight:700;}
 .content h5 {font-size:15px;font-weight:700;}
@@ -221,7 +221,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .content blockquote p {margin:0;font-family:'Noto Sans TC', sans-serif;}
 .content table {margin:15px 0;border-collapse:collapse;display:table;width:100%;table-layout:fixed;word-wrap:break-word;}
 .content table tr {border-top:1px solid #ccc;background-color:#fff;}
-.content table th,.content table td {border:1px solid #ddd;padding:6px 13px;}
+.content table th,.content table td {border:1px solid #ddd;padding:6px 13px;text-align: center;}
 .content .highlight pre {border:none;margin:0;padding:0;}
 .content .highlight table {margin:0;width:auto;}
 .content .highlight td {border:none;padding:0;}
@@ -315,3 +315,7 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   .article .side {display:none}
   .comment .gt-btn-public .gt-btn-text:after{content:"";}
 }
+.footnotes{display:none;}
+#footnoteText{display:none;border:2px rgb(225, 225, 225) solid;border-radius:10px;background-color:rgb(225, 225, 225);width:180px;height:auto;padding:15px}
+svg {width:20px; height: auto;}
+.att_input{width: 50px;height: auto;}
