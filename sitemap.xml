@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wayneh.tw/2020/04/15/information-management-for-example/</loc>
+    
+    <lastmod>2020-04-15T08:25:15.526Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wayneh.tw/2020/04/07/a-proof-of-the-completeness-of-predicate-logic/</loc>
     
     <lastmod>2020-04-10T06:12:15.316Z</lastmod>
@@ -37,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://wayneh.tw/2019/07/18/sisyphean-life/</loc>
-    
-    <lastmod>2020-02-08T06:16:31.120Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wayneh.tw/2019/07/18/Paradigm-shift/</loc>
     
     <lastmod>2020-02-08T06:16:31.120Z</lastmod>
@@ -52,6 +52,13 @@
   
   <url>
     <loc>http://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/</loc>
+    
+    <lastmod>2020-02-08T06:16:31.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wayneh.tw/2019/07/18/sisyphean-life/</loc>
     
     <lastmod>2020-02-08T06:16:31.120Z</lastmod>
     
