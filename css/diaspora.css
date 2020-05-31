@@ -1,10 +1,10 @@
 body,div,h1,h2,h3,h4,h5,h6,p,ul,li,strong,em {margin:0;padding:0;list-style:none;}
 html {-webkit-text-size-adjust:100%;}
 html,body {-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;background:#fff;}
-h1,h2,h3,h4,h5 {font-family: 'Noto Serif TC', serif;}
-em {font-family:'Noto Serif TC', serif;font-style:normal;text-decoration:underline;}
-div,p,strong {font-family:'Noto Sans TC', sans-serif;font-size:14px;position:relative;overflow-x:hidden;}
-ul,li {font-family:'Noto Sans TC', sans-serif;font-size:14px;position:relative;}
+h1,h2,h3,h4,h5 {font-family: 'Noto Sans TC', sans-serif;}
+em {font-family:'Noto Sans TC', sans-serif;font-style:normal;text-decoration:underline;}
+div,p,strong {font-family:'Noto Sans TC', sans-sans-serif;font-size:14px;position:relative;overflow-x:hidden;}
+ul,li {font-family:'Noto Sans TC', sans-sans-serif;font-size:14px;position:relative;}
 body:before {background:grey;position:absolute;content:'';display:block;width:14px;height:14px;left:50%;top:50%;margin-left:-7px;margin-top:-7px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-webkit-animation:loading 2s ease-out forwards infinite;-moz-animation:loading 2s ease-out forwards infinite;display:none;}
 body.loading:before {display:block;}
 @-webkit-keyframes loading {
@@ -20,6 +20,7 @@ body.loading:before {display:block;}
 body.loading #container,body.loading #single,body.loading .nav {opacity:0;}
 html.loading,body.loading {height:100%;overflow:hidden;}
 a,a:hover {text-decoration:none;}
+figcaption {text-align: center;font-size:9px;}
 img {display:block;max-width:100%;height:auto;}
 audio {display:none;visibility:hidden;opacity:0;width:0;height:0;}
 #screen {position:relative;}
@@ -50,7 +51,7 @@ body.mu .image-logo {background-color:black;}
 .else h3 a {font-weight: 700;color:#333;}
 .else h3 + p {color:#555;margin:10px 100px 0 80px;font-size:14px;line-height:1.8;}
 .here {position:absolute;left:80px;bottom:80px;color:#999;font-size:13px;}
-.here span {display:inline-block;vertical-align:middle;margin-right:10px;font-family:"icomoon",'Noto Sans TC',sans-serif;}
+.here span {display:inline-block;vertical-align:middle;margin-right:10px;font-family:"icomoon",'Noto Sans TC',sans-sans-serif;}
 .here span:before {display:inline-block;vertical-align:top;margin-right:7px;font-size:16px;}
 .here a {display:inline-block;cursor:default;}
 .here .icon-like {color:#999!important;margin-right:0;}
@@ -95,7 +96,7 @@ body.mu .icon-logo {color:#333;}
 .menu a:hover {color:#333;}
 .nav p {color:#999;font-size:12px;position:absolute;width:100%;text-align:center;bottom:30px;}
 .nav p a {color:#999;text-decoration:underline;}
-.nav p:first-letter {font-family:sans-serif;}
+.nav p:first-letter {font-family:sans-sans-serif;}
 .set {display:block;max-width:768px;margin:0 auto 30px;line-height:2;padding-left:30px}
 .set h3 {font-size:22px;font-weight:500;margin:15px 0 20px}
 .set a {display:inline-block;position:relative;color:#424242;padding:5px 5px}
@@ -118,7 +119,7 @@ body.mu .icon-logo {color:#333;}
 .timeline-title::before {width:12px;height:12px;border-width:4px;left:-42px}
 .timeline-subtitle {font-weight:400;font-size:22px}
 .timeline-subtitle::before {width:11px;height:11px;border-width:3px;left:-40px}
-.timeline-item {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;position:relative;padding-left:100px}
+.timeline-item {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-sans-serif;position:relative;padding-left:100px}
 .timeline-item time {position:absolute;left:0;top:50%;transform:translateY(-50%);display:inline-block;font-weight:300;color:#616161;width:100px}
 .timeline-item a {color:#212121;font-weight:400;transition:all .3s ease}
 .timeline-item::before {width:9px;height:9px;border-width:2px;left:-38px}
@@ -165,7 +166,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .article .side {align-self:flex-start;flex:0 0 200px;}
 .article .toc {width:200px;height:80vh;height:calc(100vh - 60px);position:fixed;top:60px;right:100px;padding:1em;line-height:2.3;overflow-y:scroll;}
 .article .toc .toc-item:hover {font-weight:700;}
-.article .toc li a {font-family: 'Noto Serif TC', serif;display:inline-block;color:#737373;text-decoration:none;transition:color,padding 0.2s ease-in-out;}
+.article .toc li a {font-family: 'Noto Sans TC', sans-serif;display:inline-block;color:#737373;text-decoration:none;transition:color,padding 0.2s ease-in-out;}
 .article .toc li a:hover {padding-left:8px;border-left:3px solid black;}
 .page .main{padding:0px;}
 
@@ -220,7 +221,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .content code {background:rgba(99,99,99,0.07);color:#ef459c;padding:1px 2px;border-radius:2px;}
 .content pre code {background:none;text-shadow:none;padding:0;}
 .content blockquote {color:#656565;margin:0 0 1.1em;border-left:3px solid #efefef;border-left-width:6px;background-color:rgba(119,119,119,0.05);border-top-right-radius:5px;border-bottom-right-radius:5px;padding:15px 20px;}
-.content blockquote p {margin:0;font-family:'Noto Sans TC', sans-serif;}
+.content blockquote p {margin:0;font-family:'Noto Sans TC', sans-sans-serif;}
 .content table {margin:15px 0;border-collapse:collapse;display:table;width:100%;table-layout:fixed;word-wrap:break-word;}
 .content table tr {border-top:1px solid #ccc;background-color:#fff;}
 .content table th,.content table td {border:1px solid #ddd;padding:6px 13px;text-align: center;}
