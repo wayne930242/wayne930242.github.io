@@ -1,79 +1,258 @@
-
 <!DOCTYPE html>
-<html lang="zh-TW" class="loading">
+<html lang="zh-TW">
 <head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>克蘇魯神話的形上學 - 偉恩與咖啡</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    
-    <meta name="description" content="哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。,&amp;#x514B;&amp;#x8607;&amp;#x9B6F;&amp;#x795E;&amp;#x8A71;&amp;#xFF08;Cthulhu Mythos&amp;#xFF09;&amp;#x662F;&amp;#x5C0F;&amp;#x8AAA;&amp;#x5B,"> 
-    <meta name="author" content="洪偉 Wei Hung"> 
-    
-    
-    
-<link rel="stylesheet" href="../../../../css/diaspora.css">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/favicon/logo.svg" color="#222">
 
-    <meta name="description" content="克蘇魯神話（Cthulhu Mythos）是小說家洛夫克拉夫特（Howard Phillips Lovecraft，1890年8月20日至？？？，據說還活著）創造的神話世界觀的總稱，你或許從來沒聽過克蘇魯神話，但其實它深深地影響了我們這時代。異形、魔獸世界、大萌神長門有希、觸手 play 等，都有克蘇魯神話的影子。以克蘇魯神話為題材的遊戲也不少，例如渾沌元素（chaosium）出版的角色扮演遊戲《">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=EB Garamond:300,300italic,400,400italic,700,700italic|Noto Sans TC:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wayneh.tw","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="克蘇魯神話（Cthulhu Mythos）是小說家洛夫克拉夫特（Howard Phillips Lovecraft，1890年8月20日至？？？，據說還活著）創造的神話世界觀的總稱，你或許從來沒聽過克蘇魯神話，但其實它深深地影響了我們這時代。異形、魔獸世界、大萌神長門有希、觸手 play 等，都有克蘇魯神話的影子。以克蘇魯神話為題材的遊戲也不少，例如渾沌元素（chaosium）出版的角色扮演遊戲">
 <meta property="og:type" content="article">
 <meta property="og:title" content="克蘇魯神話的形上學">
 <meta property="og:url" content="https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/index.html">
 <meta property="og:site_name" content="偉恩與咖啡">
-<meta property="og:description" content="克蘇魯神話（Cthulhu Mythos）是小說家洛夫克拉夫特（Howard Phillips Lovecraft，1890年8月20日至？？？，據說還活著）創造的神話世界觀的總稱，你或許從來沒聽過克蘇魯神話，但其實它深深地影響了我們這時代。異形、魔獸世界、大萌神長門有希、觸手 play 等，都有克蘇魯神話的影子。以克蘇魯神話為題材的遊戲也不少，例如渾沌元素（chaosium）出版的角色扮演遊戲《">
+<meta property="og:description" content="克蘇魯神話（Cthulhu Mythos）是小說家洛夫克拉夫特（Howard Phillips Lovecraft，1890年8月20日至？？？，據說還活著）創造的神話世界觀的總稱，你或許從來沒聽過克蘇魯神話，但其實它深深地影響了我們這時代。異形、魔獸世界、大萌神長門有希、觸手 play 等，都有克蘇魯神話的影子。以克蘇魯神話為題材的遊戲也不少，例如渾沌元素（chaosium）出版的角色扮演遊戲">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://wayneh.tw/img/cthulhu.jpg">
 <meta property="article:published_time" content="2018-04-28T06:52:24.000Z">
-<meta property="article:modified_time" content="2020-06-19T07:52:58.465Z">
+<meta property="article:modified_time" content="2020-09-24T13:24:30.055Z">
 <meta property="article:author" content="洪偉 Wei Hung">
 <meta property="article:tag" content="克蘇魯神話">
 <meta property="article:tag" content="康德">
 <meta property="article:tag" content="形上學">
 <meta name="twitter:card" content="summary">
-    <script id="dsq-count-scr" src="//waynetwhexo.disqus.com/count.js" async></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Noto+Serif+TC:400,700&display=swap" rel="stylesheet">
-    <script defer src="/js/all.js"></script> 
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="custom_css_source.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="atom.xml" title="偉恩與咖啡" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<meta name="twitter:image" content="https://wayneh.tw/img/cthulhu.jpg">
+
+<link rel="canonical" href="https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>克蘇魯神話的形上學 | 偉恩與咖啡</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61272067-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-61272067-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="偉恩與咖啡" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
-<body class="loading">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><span id="config-title" style="display:none">偉恩與咖啡</span>
-    <div id="loader"></div>
-    <div id="single">
-    <div id="top" style="display: block;">
-    <div class="bar" style="width: 0;"></div>
-    <a class="icon-home image-icon" href="javascript:;" data-url="https://wayneh.tw"></a>
-    <div title="播放/暫停" class="icon-play"></div>
-    <h3 class="subtitle">克蘇魯神話的形上學</h3>
-    <div class="social">
-        <!--<div class="like-icon">-->
-            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
-        <!--</div>-->
-        <div>
-            <div class="share">
-                <a title="QR code" class="icon-scan" href="javascript:;"></a>
-            </div>
-            <div id="qr"></div>
-        </div>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    <div class="scrollbar"></div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">偉恩與咖啡</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">哲學、TRPG、雜談</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
 
-    <div class="section">
-        <div class="article">
-    <div class='main'>
-        <h1 class="title">克蘇魯神話的形上學</h1>
-        <div class="stuff">
-            <span>四月 28, 2018</span>
-            
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/%E5%85%8B%E8%98%87%E9%AD%AF%E7%A5%9E%E8%A9%B1/" rel="tag">克蘇魯神話</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/%E5%BA%B7%E5%BE%B7/" rel="tag">康德</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/%E5%BD%A2%E4%B8%8A%E5%AD%B8/" rel="tag">形上學</a></li></ul>
 
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="https://about.me/wayne930242" rel="noopener" target="_blank"><i class="fas fa-feather-alt fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-哲學">
+
+    <a href="/categories/philosophy/" rel="section"><i class="fas fa-coffee fa-fw"></i>哲學</a>
+
+  </li>
+        <li class="menu-item menu-item-trpg">
+
+    <a href="/categories/TRPG/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>TRPG</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.png">
+      <meta itemprop="name" content="洪偉 Wei Hung">
+      <meta itemprop="description" content="哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="偉恩與咖啡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          克蘇魯神話的形上學
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2018-04-28 14:52:24" itemprop="dateCreated datePublished" datetime="2018-04-28T14:52:24+08:00">2018-04-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2020-09-24 21:24:30" itemprop="dateModified" datetime="2020-09-24T21:24:30+08:00">2020-09-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/philosophy/" itemprop="url" rel="index"><span itemprop="name">philosophy</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2018/04/28/metaphysics-of-cthulhu-mythos/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/04/28/metaphysics-of-cthulhu-mythos/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
-        <div class="content markdown">
-            <p>&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#xFF08;Cthulhu Mythos&#xFF09;&#x662F;&#x5C0F;&#x8AAA;&#x5BB6;&#x6D1B;&#x592B;&#x514B;&#x62C9;&#x592B;&#x7279;&#xFF08;Howard Phillips Lovecraft&#xFF0C;1890&#x5E74;8&#x6708;20&#x65E5;&#x81F3;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF0C;&#x64DA;&#x8AAA;&#x9084;&#x6D3B;&#x8457;&#xFF09;&#x5275;&#x9020;&#x7684;&#x795E;&#x8A71;&#x4E16;&#x754C;&#x89C0;&#x7684;&#x7E3D;&#x7A31;&#xFF0C;&#x4F60;&#x6216;&#x8A31;&#x5F9E;&#x4F86;&#x6C92;&#x807D;&#x904E;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#xFF0C;&#x4F46;&#x5176;&#x5BE6;&#x5B83;&#x6DF1;&#x6DF1;&#x5730;&#x5F71;&#x97FF;&#x4E86;&#x6211;&#x5011;&#x9019;&#x6642;&#x4EE3;&#x3002;&#x7570;&#x5F62;&#x3001;&#x9B54;&#x7378;&#x4E16;&#x754C;&#x3001;&#x5927;&#x840C;&#x795E;&#x9577;&#x9580;&#x6709;&#x5E0C;&#x3001;&#x89F8;&#x624B; play &#x7B49;&#xFF0C;&#x90FD;&#x6709;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x7684;&#x5F71;&#x5B50;&#x3002;&#x4EE5;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x70BA;&#x984C;&#x6750;&#x7684;&#x904A;&#x6232;&#x4E5F;&#x4E0D;&#x5C11;&#xFF0C;&#x4F8B;&#x5982;&#x6E3E;&#x6C8C;&#x5143;&#x7D20;&#xFF08;chaosium&#xFF09;&#x51FA;&#x7248;&#x7684;&#x89D2;&#x8272;&#x626E;&#x6F14;&#x904A;&#x6232;&#x300A;&#x514B;&#x8607;&#x9B6F;&#x7684;&#x547C;&#x559A;&#x300B;&#xFF08;Call of Cthulhu&#xFF09;&#x3002;&#x751A;&#x81F3;&#x6709;&#x4E00;&#x7A2E;&#x6050;&#x6016;&#x98A8;&#x683C;&#xFF0C;&#x5C31;&#x53EB;&#x300C;&#x6D1B;&#x592B;&#x514B;&#x62C9;&#x592B;&#x7279;&#x5F0F;&#x6050;&#x6016;&#x300D;&#x3002;</p>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <img data-src="/img/cthulhu.jpg" class>
+<p>&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#xFF08;Cthulhu Mythos&#xFF09;&#x662F;&#x5C0F;&#x8AAA;&#x5BB6;&#x6D1B;&#x592B;&#x514B;&#x62C9;&#x592B;&#x7279;&#xFF08;Howard Phillips Lovecraft&#xFF0C;1890&#x5E74;8&#x6708;20&#x65E5;&#x81F3;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF0C;&#x64DA;&#x8AAA;&#x9084;&#x6D3B;&#x8457;&#xFF09;&#x5275;&#x9020;&#x7684;&#x795E;&#x8A71;&#x4E16;&#x754C;&#x89C0;&#x7684;&#x7E3D;&#x7A31;&#xFF0C;&#x4F60;&#x6216;&#x8A31;&#x5F9E;&#x4F86;&#x6C92;&#x807D;&#x904E;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#xFF0C;&#x4F46;&#x5176;&#x5BE6;&#x5B83;&#x6DF1;&#x6DF1;&#x5730;&#x5F71;&#x97FF;&#x4E86;&#x6211;&#x5011;&#x9019;&#x6642;&#x4EE3;&#x3002;&#x7570;&#x5F62;&#x3001;&#x9B54;&#x7378;&#x4E16;&#x754C;&#x3001;&#x5927;&#x840C;&#x795E;&#x9577;&#x9580;&#x6709;&#x5E0C;&#x3001;&#x89F8;&#x624B; play &#x7B49;&#xFF0C;&#x90FD;&#x6709;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x7684;&#x5F71;&#x5B50;&#x3002;&#x4EE5;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x70BA;&#x984C;&#x6750;&#x7684;&#x904A;&#x6232;&#x4E5F;&#x4E0D;&#x5C11;&#xFF0C;&#x4F8B;&#x5982;&#x6E3E;&#x6C8C;&#x5143;&#x7D20;&#xFF08;chaosium&#xFF09;&#x51FA;&#x7248;&#x7684;&#x89D2;&#x8272;&#x626E;&#x6F14;&#x904A;&#x6232;&#x300A;&#x514B;&#x8607;&#x9B6F;&#x7684;&#x547C;&#x559A;&#x300B;&#xFF08;Call of Cthulhu&#xFF09;&#x3002;&#x751A;&#x81F3;&#x6709;&#x4E00;&#x7A2E;&#x6050;&#x6016;&#x98A8;&#x683C;&#xFF0C;&#x5C31;&#x53EB;&#x300C;&#x6D1B;&#x592B;&#x514B;&#x62C9;&#x592B;&#x7279;&#x5F0F;&#x6050;&#x6016;&#x300D;&#x3002;</p>
 <a id="more"></a>
 <p>&#x300C;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x300D;&#x547D;&#x540D;&#x81EA;&#x5049;&#x5927;&#x7684;&#x514B;&#x8607;&#x9B6F;&#xFF08;Great Cthulhu&#xFF09;&#xFF0C;&#x5728;&#x7CFB;&#x5217;&#x795E;&#x8A71;&#x8A2D;&#x5B9A;&#x4E2D;&#xFF0C;&#x7942;&#x4F86;&#x81EA;&#x5EE3;&#x6F20;&#x5B87;&#x5B99;&#xFF0C;&#x9577;&#x7720;&#x5728;&#x592A;&#x5E73;&#x6D0B;&#x5357;&#x65B9;&#x7684;&#x6D77;&#x5E95;&#x3002;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x4E2D;&#x6709;&#x5404;&#x7A2E;&#x50CF;&#x514B;&#x8607;&#x9B6F;&#x9019;&#x6A23;&#x5F37;&#x5927;&#x7684;&#x795E;&#x7949;&#xFF0C;&#x7942;&#x5011;&#x80FD;&#x5920;&#x7121;&#x8996;&#x81EA;&#x7136;&#x5B9A;&#x5F8B;&#xFF0C;&#x751A;&#x81F3;&#x6709;&#x4E9B;&#x9084;&#x80FD;&#x652F;&#x914D;&#x81EA;&#x7136;&#x5B9A;&#x5F8B;&#x3002;&#x4E0D;&#x540C;&#x65BC;&#x4E00;&#x822C;&#x5B97;&#x6559;&#x4FE1;&#x4EF0;&#x7684;&#x795E;&#x7947;&#xFF0C;&#x514B;&#x8607;&#x9B6F;&#x4E16;&#x754C;&#x7684;&#x795E;&#x5C0D;&#x4EBA;&#x985E;&#x7684;&#x751F;&#x6D3B;&#x6F20;&#x4E0D;&#x95DC;&#x5207;&#xFF0C;&#x5982;&#x679C;&#x7942;&#x5011;&#x7684;&#x5F37;&#x5927;&#x529B;&#x91CF;&#x6467;&#x6BC0;&#x4E86;&#x5730;&#x7403;&#xFF0C;&#x6BD4;&#x8D77;&#x6545;&#x610F;&#x70BA;&#x4E4B;&#xFF0C;&#x9084;&#x66F4;&#x53EF;&#x80FD;&#x53EA;&#x662F;&#x56E0;&#x70BA;&#x4E0D;&#x5C0F;&#x5FC3;&#x3002;&#x5C31;&#x50CF;&#x4F60;&#x4E00;&#x908A;&#x4E0A;&#x7DB2;&#x4E00;&#x908A;&#x6296;&#x8173;&#x7D50;&#x679C;&#x58D3;&#x6B7B;&#x4E86;&#x8DEF;&#x904E;&#x7684;&#x879E;&#x87FB;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x6839;&#x672C;&#x4E0D;&#x6703;&#x6CE8;&#x610F;&#x5230;&#x3002;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x5F37;&#x8ABF;&#xFF0C;&#x9019;&#x7A2E;&#x6F20;&#x4E0D;&#x95DC;&#x5FC3;&#x624D;&#x662F;&#x795E;&#x660E;&#x771F;&#x6B63;&#x7684;&#x6A23;&#x5B50;&#xFF08;&#x7942;&#x5011;&#x624D;&#x4E0D;&#x6703;&#x7BA1;&#x540C;&#x6027;&#x80FD;&#x4E0D;&#x80FD;&#x7D50;&#x5A5A;&#x4EC0;&#x9EBC;&#x7684;&#xFF09;&#x3002;</p>
 <p>&#x7136;&#x800C;&#xFF0C;&#x9019;&#x4E9B;&#x795E;&#x4F9D;&#x7136;&#x53D7;&#x5230;&#x4EBA;&#x5D07;&#x62DC;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5C07;&#x9019;&#x4E9B;&#x4EBA;&#x53EB;&#x4F5C;&#x300C;&#x514B;&#x8607;&#x9B6F;&#x6559;&#x5F92;&#x300D;&#x3002;&#x514B;&#x8607;&#x9B6F;&#x6559;&#x5F92;&#x662F;&#x771F;&#x6B63;&#x610F;&#x7FA9;&#x4E0B;&#x7684;&#x90AA;&#x6559;&#x5F92;&#xFF0C;&#x4ED6;&#x5011;&#x5931;&#x53BB;&#x4E86;&#x6240;&#x6709;&#x4EBA;&#x6027;&#x7684;&#x53EF;&#x611B;&#x4E4B;&#x8655;&#xFF0C;&#x70BA;&#x4E86;&#x53EC;&#x559A;&#x90AA;&#x795E;&#xFF0C;&#x4E0D;&#x60DC;&#x63A1;&#x7528;&#x6D3B;&#x4EBA;&#x737B;&#x796D;&#x4E4B;&#x985E;&#x7684;&#x53EF;&#x6015;&#x624B;&#x6BB5;&#x3002;&#x4EFB;&#x4F55;&#x6709;&#x4EBA;&#x6027;&#x8207;&#x7406;&#x667A;&#x7684;&#x4EBA;&#x5927;&#x6982;&#x90FD;&#x6703;&#x62D2;&#x7D55;&#x6210;&#x70BA;&#x9019;&#x6A23;&#x7684;&#x90AA;&#x6559;&#x5F92;&#x3002;&#x5C0D;&#x5427;&#xFF1F;</p>
@@ -104,128 +283,414 @@
 <footer><strong>&#x6D1B;&#x592B;&#x514B;&#x62C9;&#x592B;&#x7279;</strong><cite>&#x3008;&#x514B;&#x8607;&#x9B6F;&#x7684;&#x547C;&#x559A;&#x3009;</cite></footer></blockquote>
 <p>&#x5982;&#x679C;&#x6211;&#x5011;&#x9858;&#x610F;&#x76F8;&#x4FE1;&#xFF0C;&#x5C0D;&#x7121;&#x77E5;&#x7684;&#x6050;&#x61FC;&#x6216;&#x8A31;&#x662F;&#x4E00;&#x7A2E;&#x5FB5;&#x5146;&#xFF0C;&#x9019;&#x7A2E;&#x795E;&#x79D8;&#x7684;&#x5FC3;&#x7406;&#x4F5C;&#x7528;&#x6B63;&#x5728;&#x8A66;&#x5716;&#x4FDD;&#x8B77;&#x6211;&#x5011;&#xFF0C;&#x5F9E;&#x6211;&#x5011;&#x9019;&#x500B;&#x7269;&#x7A2E;&#x5728;&#x9060;&#x53E4;&#x66FE;&#x906D;&#x9047;&#x904E;&#x7684;&#x60B2;&#x6158;&#x4E2D;&#x4FDD;&#x8B77;&#x6211;&#x5011;&#x3001;&#x5F9E;&#x6211;&#x5011;&#x9677;&#x5165;&#x760B;&#x72C2;&#x4EE5;&#x524D;&#x4FDD;&#x8B77;&#x6211;&#x5011;&#x3002;&#x7576;&#x6211;&#x5011;&#x754F;&#x61FC;&#x3001;&#x6211;&#x5011;&#x9003;&#x96E2;&#x3001;&#x62D2;&#x7D55;&#x806F;&#x7E6B;&#x8D77;&#x95DC;&#x65BC;&#x771F;&#x76F8;&#x7684;&#x7DDA;&#x7D22;&#xFF0C;&#x5C0D;&#x6211;&#x5011;&#x4F86;&#x8AAA;&#xFF0C;&#x771F;&#x662F;&#x518D;&#x597D;&#x4E0D;&#x904E;&#x7684;&#x3002;</p>
 <p>&#x7E3D;&#x6B78;&#x800C;&#x8A00;&#xFF0C;&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x5F62;&#x4E0A;&#x5B78;&#x4E0D;&#x53EA;&#x662F;&#x4E00;&#x500B;&#x61F7;&#x7591;&#x8AD6;&#xFF0C;&#x9084;&#x662F;&#x4E00;&#x500B;&#x5177;&#x6709;&#x6B63;&#x9762;&#x610F;&#x7FA9;&#x7684;&#x5F62;&#x4E0A;&#x5B78;&#x4E3B;&#x5F35;&#x3002;&#x5B83;&#x4E0D;&#x53EA;&#x8AAA;&#x660E;&#x6211;&#x5011;&#x70BA;&#x4F55;&#x662F;&#x7121;&#x77E5;&#x7684;&#xFF0C;&#x9084;&#x8AAA;&#x660E;&#x4E86;&#x6211;&#x5011;&#x70BA;&#x4F55;&#x5FC5;&#x9808;&#x63A5;&#x53D7;&#x9019;&#x6A23;&#x7684;&#x7121;&#x77E5;&#x3002;&#x5728;&#x9019;&#x5F62;&#x4E0A;&#x5B78;&#x4E2D;&#xFF0C;&#x4EBA;&#x985E;&#x662F;&#x6E3A;&#x5C0F;&#x7684;&#x3001;&#x7121;&#x8DB3;&#x8F15;&#x91CD;&#x7684;&#xFF0C;&#x9762;&#x5C0D;&#x81EA;&#x7136;&#x4E5F;&#x4E0D;&#x518D;&#x6709;&#x4EFB;&#x4F55;&#x7684;&#x5BB0;&#x5236;&#x5730;&#x4F4D;&#x3002;&#x66F4;&#x591A;&#x6642;&#x5019;&#xFF0C;&#x6211;&#x5011;&#x8A72;&#x6176;&#x5E78;&#x8207;&#x611F;&#x6FC0;&#x7684;&#xFF0C;&#x662F;&#x9019;&#x500B;&#x5B87;&#x5B99;&#x5728;&#x7121;&#x610F;&#x9593;&#x653E;&#x4E86;&#x6211;&#x5011;&#x4E00;&#x689D;&#x751F;&#x8DEF;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F5C;&#x70BA;&#x300C;&#x842C;&#x7269;&#x4E4B;&#x9748;&#x300D;&#x5B89;&#x5B89;&#x7A69;&#x7A69;&#x5730;&#x3001;&#x6709;&#x5C0A;&#x56B4;&#x5730;&#x751F;&#x6D3B;&#x8457;&#x3002;</p>
-<h2 id="notes"><a class="header-anchor" href="#notes">&#xB6;</a>Notes</h2>
+<h2 id="Notes"><a class="header-anchor" href="#Notes">&#xB6;</a>Notes</h2>
 <blockquote>
-<p>&#x672C;&#x6587;&#x9996;&#x6B21;&#x520A;&#x767B;&#x65BC;&#x9CF4;&#x4EBA;&#x5802;<a href="https://opinion.udn.com/opinion/story/6685/2504703" target="_blank" rel="noopener">&#x70D9;&#x54F2;&#x5B78;&#x5C08;&#x6B04;</a>&#x3002;</p>
+<p>&#x672C;&#x6587;&#x9996;&#x6B21;&#x520A;&#x767B;&#x65BC;&#x9CF4;&#x4EBA;&#x5802;<a target="_blank" rel="noopener" href="https://opinion.udn.com/opinion/story/6685/2504703">&#x70D9;&#x54F2;&#x5B78;&#x5C08;&#x6B04;</a>&#x3002;</p>
 </blockquote>
 <hr>
 <p>&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B61;&#x9019;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x8ACB;&#x4E0D;&#x541D;&#x7528;&#x5BE6;&#x969B;&#x884C;&#x52D5;&#x652F;&#x6301;&#x6211;&#xFF1A;</p>
 <ul>
-<li><a href="https://paypal.me/wayne930242" target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cc-paypal" class="svg-inline--fa fa-cc-paypal fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path fill="currentColor" d="M186.3 258.2c0 12.2-9.7 21.5-22 21.5-9.2 0-16-5.2-16-15 0-12.2 9.5-22 21.7-22 9.3 0 16.3 5.7 16.3 15.5zM80.5 209.7h-4.7c-1.5 0-3 1-3.2 2.7l-4.3 26.7 8.2-.3c11 0 19.5-1.5 21.5-14.2 2.3-13.4-6.2-14.9-17.5-14.9zm284 0H360c-1.8 0-3 1-3.2 2.7l-4.2 26.7 8-.3c13 0 22-3 22-18-.1-10.6-9.6-11.1-18.1-11.1zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM128.3 215.4c0-21-16.2-28-34.7-28h-40c-2.5 0-5 2-5.2 4.7L32 294.2c-.3 2 1.2 4 3.2 4h19c2.7 0 5.2-2.9 5.5-5.7l4.5-26.6c1-7.2 13.2-4.7 18-4.7 28.6 0 46.1-17 46.1-45.8zm84.2 8.8h-19c-3.8 0-4 5.5-4.2 8.2-5.8-8.5-14.2-10-23.7-10-24.5 0-43.2 21.5-43.2 45.2 0 19.5 12.2 32.2 31.7 32.2 9 0 20.2-4.9 26.5-11.9-.5 1.5-1 4.7-1 6.2 0 2.3 1 4 3.2 4H200c2.7 0 5-2.9 5.5-5.7l10.2-64.3c.3-1.9-1.2-3.9-3.2-3.9zm40.5 97.9l63.7-92.6c.5-.5.5-1 .5-1.7 0-1.7-1.5-3.5-3.2-3.5h-19.2c-1.7 0-3.5 1-4.5 2.5l-26.5 39-11-37.5c-.8-2.2-3-4-5.5-4h-18.7c-1.7 0-3.2 1.8-3.2 3.5 0 1.2 19.5 56.8 21.2 62.1-2.7 3.8-20.5 28.6-20.5 31.6 0 1.8 1.5 3.2 3.2 3.2h19.2c1.8-.1 3.5-1.1 4.5-2.6zm159.3-106.7c0-21-16.2-28-34.7-28h-39.7c-2.7 0-5.2 2-5.5 4.7l-16.2 102c-.2 2 1.3 4 3.2 4h20.5c2 0 3.5-1.5 4-3.2l4.5-29c1-7.2 13.2-4.7 18-4.7 28.4 0 45.9-17 45.9-45.8zm84.2 8.8h-19c-3.8 0-4 5.5-4.3 8.2-5.5-8.5-14-10-23.7-10-24.5 0-43.2 21.5-43.2 45.2 0 19.5 12.2 32.2 31.7 32.2 9.3 0 20.5-4.9 26.5-11.9-.3 1.5-1 4.7-1 6.2 0 2.3 1 4 3.2 4H484c2.7 0 5-2.9 5.5-5.7l10.2-64.3c.3-1.9-1.2-3.9-3.2-3.9zm47.5-33.3c0-2-1.5-3.5-3.2-3.5h-18.5c-1.5 0-3 1.2-3.2 2.7l-16.2 104-.3.5c0 1.8 1.5 3.5 3.5 3.5h16.5c2.5 0 5-2.9 5.2-5.7L544 191.2v-.3zm-90 51.8c-12.2 0-21.7 9.7-21.7 22 0 9.7 7 15 16.2 15 12 0 21.7-9.2 21.7-21.5.1-9.8-6.9-15.5-16.2-15.5z"/></svg> &#x55AE;&#x6B21;&#x652F;&#x6301;&#xFF08;paypal&#xFF09;</a></li>
+<li><a target="_blank" rel="noopener" href="https://paypal.me/wayne930242"><i class="fab fa-paypal"></i> &#x55AE;&#x6B21;&#x652F;&#x6301;&#xFF08;paypal&#xFF09;</a></li>
 </ul>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>&#x6700;&#x65E9;&#xFF0C;&#x5728;&#x79D1;&#x5B78;&#x9084;&#x672A;&#x5206;&#x79D1;&#x3001;&#x79D1;&#x5B78;&#x65B9;&#x6CD5;&#x9084;&#x672A;&#x8D70;&#x4E0A;&#x5BE6;&#x8B49;&#x9053;&#x8DEF;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x79D1;&#x5B78;&#x8207;&#x5F62;&#x4E0A;&#x5B78;&#x662F;&#x5BC6;&#x4E0D;&#x53EF;&#x5206;&#x7684;&#x5B78;&#x554F;&#x3002; <a href="#fnref1" class="footnote-backref">&#x21A9;</a></p>
+<li id="fn1" class="footnote-item"><p>&#x6700;&#x65E9;&#xFF0C;&#x5728;&#x79D1;&#x5B78;&#x9084;&#x672A;&#x5206;&#x79D1;&#x3001;&#x79D1;&#x5B78;&#x65B9;&#x6CD5;&#x9084;&#x672A;&#x8D70;&#x4E0A;&#x5BE6;&#x8B49;&#x9053;&#x8DEF;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x79D1;&#x5B78;&#x8207;&#x5F62;&#x4E0A;&#x5B78;&#x662F;&#x5BC6;&#x4E0D;&#x53EF;&#x5206;&#x7684;&#x5B78;&#x554F;&#x3002; <a href="#fnref1" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>&#x9019;&#x6A23;&#x7684;&#x4E3B;&#x5F35;&#x5176;&#x5BE6;&#x4E0D;&#x7B97;&#x6975;&#x7AEF;&#xFF0C;&#x5FB7;&#x570B;&#x91CD;&#x8981;&#x54F2;&#x5B78;&#x5BB6;&#x5EB7;&#x5FB7;&#xFF08;Immanuel Kant&#xFF09;&#x5C31;&#x63A1;&#x53D6;&#x985E;&#x4F3C;&#x7684;&#x4E3B;&#x5F35;&#x3002; <a href="#fnref2" class="footnote-backref">&#x21A9;</a></p>
+<li id="fn2" class="footnote-item"><p>&#x9019;&#x6A23;&#x7684;&#x4E3B;&#x5F35;&#x5176;&#x5BE6;&#x4E0D;&#x7B97;&#x6975;&#x7AEF;&#xFF0C;&#x5FB7;&#x570B;&#x91CD;&#x8981;&#x54F2;&#x5B78;&#x5BB6;&#x5EB7;&#x5FB7;&#xFF08;Immanuel Kant&#xFF09;&#x5C31;&#x63A1;&#x53D6;&#x985E;&#x4F3C;&#x7684;&#x4E3B;&#x5F35;&#x3002; <a href="#fnref2" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
 </li>
 </ol>
 </section>
 
-            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="https://wayneh.tw/mp3/Spirit_of_the_Dead.mp3">
-            </audio>
-            
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wayne930242">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
         </div>
-        <div id="disqus_thread">
-    <script type="text/javascript">
-    var disqus_shortname = '';
-    var disqus_config = function () {
-        this.page.url = 'https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/';
-        this.page.identifier = '/2018/04/28/metaphysics-of-cthulhu-mythos/';
-        this.page.title = '克蘇魯神話的形上學';
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.plurk.com/wayne930242">
+            <span class="icon">
+              <i class="fas fa-parking"></i>
+            </span>
+
+            <span class="label">Plurk</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%85%8B%E8%98%87%E9%AD%AF%E7%A5%9E%E8%A9%B1/" rel="tag"># 克蘇魯神話</a>
+              <a href="/tags/%E5%BA%B7%E5%BE%B7/" rel="tag"># 康德</a>
+              <a href="/tags/%E5%BD%A2%E4%B8%8A%E5%AD%B8/" rel="tag"># 形上學</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2018/12/26/Fichte-UBI/" rel="next" title="國家應該免費給你錢？談費希特的財產權概念">
+      國家應該免費給你錢？談費希特的財產權概念 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="洪偉 Wei Hung"
+      src="/logo.png">
+  <p class="site-author-name" itemprop="name">洪偉 Wei Hung</p>
+  <div class="site-description" itemprop="description">哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wayne930242" title="GitHub → https://github.com/wayne930242" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wayne930242@gmail.com" title="E-Mail → mailto:wayne930242@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wayne930242" title="Twitter → https://twitter.com/wayne930242" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/wayne930242" title="FB Page → https://www.facebook.com/wayne930242" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.plurk.com/wayne930242" title="Plurk → https://www.plurk.com/wayne930242" rel="noopener" target="_blank"><i class="fas fa-parking fa-fw"></i>Plurk</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">洪偉 Wei Hung</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 強力驅動
+  </div><script defer src="/lib/three.js"></script>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+    <script defer src="/lib/three/canvas_sphere.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://waynetwhexo.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
+    s.src = 'https://waynehtw.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
     (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/";
+    this.page.identifier = "2018/04/28/metaphysics-of-cthulhu-mythos/";
+    this.page.title = "克蘇魯神話的形上學";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://waynehtw.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
 
-
-        </div>
-        </div>
-    
-        <div class='side'>
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#&#x5F62;&#x4E0A;&#x5B78;&#xFF1A;&#x6211;&#x5011;&#x8A72;&#x5982;&#x4F55;&#x7406;&#x89E3;&#x4E16;&#x754C;"><span class="toc-text">&amp;#xB6;&amp;#x5F62;&amp;#x4E0A;&amp;#x5B78;&amp;#xFF1A;&amp;#x6211;&amp;#x5011;&amp;#x8A72;&amp;#x5982;&amp;#x4F55;&amp;#x7406;&amp;#x89E3;&amp;#x4E16;&amp;#x754C;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#&#x4E00;&#x500B;&#x4F8B;&#x5B50;&#xFF1A;&#x76EE;&#x7684;&#x8AD6;-vs-&#x6A5F;&#x68B0;&#x8AD6;"><span class="toc-text">&amp;#xB6;&amp;#x4E00;&amp;#x500B;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&amp;#x76EE;&amp;#x7684;&amp;#x8AD6; vs &amp;#x6A5F;&amp;#x68B0;&amp;#x8AD6;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#&#x514B;&#x8607;&#x9B6F;&#x795E;&#x8A71;&#x8207;&#x5927;&#x5B87;&#x5B99;&#x6050;&#x6016;"><span class="toc-text">&amp;#xB6;&amp;#x514B;&amp;#x8607;&amp;#x9B6F;&amp;#x795E;&amp;#x8A71;&amp;#x8207;&amp;#x5927;&amp;#x5B87;&amp;#x5B99;&amp;#x6050;&amp;#x6016;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#notes"><span class="toc-text">&amp;#xB6;Notes</span></a></li></ol>
-        </div>
-    
-    <div id="footnoteText"></div>
-</div>
-
-    </div>
-</div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
-
-<script src="../../../../cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-
-<script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="../../../../js/plugin.js"></script>
-<script src="../../../../js/diaspora.js"></script>
-
-
-<link rel="stylesheet" href="../../../../photoswipe/photoswipe.css">
-<link rel="stylesheet" href="../../../../photoswipe/default-skin/default-skin.css">
-
-
-<script src="../../../../photoswipe/photoswipe.min.js"></script>
-<script src="../../../../photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
 </html>

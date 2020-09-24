@@ -2,7 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wayneh.tw/2020/09/24/mechanism-1/</loc>
+    <loc>https://wayneh.tw/lib/three/package.json</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/lib/three/renovate.json</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/lib/three/README.html</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/08/17/coc-kp-intro/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/02/07/control-scene/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/02/04/dogs-eat-logic/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2019/07/17/education/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2018/12/26/Fichte-UBI/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/09/17/fiction-1/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/09/18/fiction-2/</loc>
     
     <lastmod>2020-09-24</lastmod>
     
@@ -16,142 +79,107 @@
   </url>
   
   <url>
-    <loc>https://wayneh.tw/2020/09/17/fiction-1/</loc>
-    
-    <lastmod>2020-09-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/09/18/fiction-2/</loc>
-    
-    <lastmod>2020-09-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://wayneh.tw/2020/09/16/good-conversaion/</loc>
     
-    <lastmod>2020-09-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/09/16/trpg-basic/</loc>
-    
-    <lastmod>2020-09-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/08/17/coc-kp-intro/</loc>
-    
-    <lastmod>2020-09-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/06/01/taste-pbta/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/05/13/sound-of-silence/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2019/07/18/sisyphean-life/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/06/15/make-character-round/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/04/15/information-management-for-example/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/03/05/information-management/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
   <url>
     <loc>https://wayneh.tw/2020/06/12/how-to-apologize/</loc>
     
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wayneh.tw/2019/07/17/education/</loc>
+    <loc>https://wayneh.tw/2020/04/15/information-management-for-example/</loc>
     
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/02/04/dogs-eat-logic/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wayneh.tw/2020/02/07/control-scene/</loc>
+    <loc>https://wayneh.tw/2020/03/05/information-management/</loc>
     
-    <lastmod>2020-06-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/2020/04/07/a-proof-of-the-completeness-of-predicate-logic/</loc>
-    
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wayneh.tw/2020/05/27/call-of-r-ality/</loc>
+    <loc>https://wayneh.tw/2020/06/15/make-character-round/</loc>
     
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wayneh.tw/2018/12/26/Fichte-UBI/</loc>
+    <loc>https://wayneh.tw/2018/04/28/metaphysics-of-cthulhu-mythos/</loc>
     
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
   <url>
     <loc>https://wayneh.tw/2019/07/18/Paradigm-shift/</loc>
     
-    <lastmod>2020-06-19</lastmod>
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2019/07/18/sisyphean-life/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/05/13/sound-of-silence/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/06/01/taste-pbta/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/09/16/trpg-basic/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/09/24/mechanism-1/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/05/27/call-of-r-ality/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/2020/04/07/a-proof-of-the-completeness-of-predicate-logic/</loc>
+    
+    <lastmod>2020-09-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/lib/pace/README.html</loc>
+    
+    <lastmod>2020-09-24</lastmod>
     
   </url>
   
