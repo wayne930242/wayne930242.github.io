@@ -193,6 +193,13 @@
 
   
   <url>
+    <loc>https://wayneh.tw/tags/CoC/</loc>
+    <lastmod>2020-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wayneh.tw/tags/%E6%94%BF%E6%B2%BB%E5%93%B2%E5%AD%B8/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
@@ -214,13 +221,6 @@
   </url>
   
   <url>
-    <loc>https://wayneh.tw/tags/CoC/</loc>
-    <lastmod>2020-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wayneh.tw/tags/%E8%87%AA%E8%A3%BD%E8%A6%8F%E5%89%87/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
@@ -228,14 +228,35 @@
   </url>
   
   <url>
-    <loc>https://wayneh.tw/tags/CoC-%E5%AE%88%E5%AF%86%E4%BA%BA%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://wayneh.tw/tags/GM%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wayneh.tw/tags/GM%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://wayneh.tw/tags/%E9%82%8F%E8%BC%AF/</loc>
+    <lastmod>2020-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/tags/%E6%99%AE%E9%80%9A%E4%BA%BA/</loc>
+    <lastmod>2020-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/tags/%E4%BA%9E%E9%87%8C%E6%96%AF%E5%A4%9A%E5%BE%B7/</loc>
+    <lastmod>2020-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wayneh.tw/tags/CoC-%E5%AE%88%E5%AF%86%E4%BA%BA%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -264,27 +285,6 @@
   
   <url>
     <loc>https://wayneh.tw/tags/%E6%87%89%E7%94%A8%E5%80%AB%E7%90%86%E5%AD%B8/</loc>
-    <lastmod>2020-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/tags/%E9%82%8F%E8%BC%AF/</loc>
-    <lastmod>2020-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/tags/%E6%99%AE%E9%80%9A%E4%BA%BA/</loc>
-    <lastmod>2020-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wayneh.tw/tags/%E4%BA%9E%E9%87%8C%E6%96%AF%E5%A4%9A%E5%BE%B7/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -333,14 +333,14 @@
   </url>
   
   <url>
-    <loc>https://wayneh.tw/tags/%E5%89%B5%E4%BD%9C/</loc>
+    <loc>https://wayneh.tw/tags/%E5%AD%98%E5%9C%A8%E4%B8%BB%E7%BE%A9/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wayneh.tw/tags/%E5%AD%98%E5%9C%A8%E4%B8%BB%E7%BE%A9/</loc>
+    <loc>https://wayneh.tw/tags/%E5%89%B5%E4%BD%9C/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -363,14 +363,14 @@
 
   
   <url>
-    <loc>https://wayneh.tw/categories/philosophy/</loc>
+    <loc>https://wayneh.tw/categories/TRPG/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wayneh.tw/categories/TRPG/</loc>
+    <loc>https://wayneh.tw/categories/philosophy/</loc>
     <lastmod>2020-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
