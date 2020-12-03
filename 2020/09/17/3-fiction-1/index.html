@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/favicon/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=EB Garamond:300,300italic,400,400italic,700,700italic|Noto Sans TC:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wayneh.tw","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="虛構敘事 是 TRPG 的主要模式和觀點，因此我們從這裡開始。然後，在我討論過 評價觀點 後，我們最後還會再一次回到這個觀點來。 虛構敘事是關於「發生了什麼事」、「正在發生什麼事」、「將要發生什麼事」的觀點。這些事都發生在一個虛構為真實的世界。我們透過對話，談論虛構世界（彷彿它是真的），和世界中的一系列事件。事情首先就是如此地單純：玩家說 PC 所說、所做，而 GM 說世界如何回應、 NPC 說">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三、如何進行虛構敘事">
+<meta property="og:url" content="https://wayneh.tw/2020/09/17/3-fiction-1/index.html">
+<meta property="og:site_name" content="偉恩與咖啡">
+<meta property="og:description" content="虛構敘事 是 TRPG 的主要模式和觀點，因此我們從這裡開始。然後，在我討論過 評價觀點 後，我們最後還會再一次回到這個觀點來。 虛構敘事是關於「發生了什麼事」、「正在發生什麼事」、「將要發生什麼事」的觀點。這些事都發生在一個虛構為真實的世界。我們透過對話，談論虛構世界（彷彿它是真的），和世界中的一系列事件。事情首先就是如此地單純：玩家說 PC 所說、所做，而 GM 說世界如何回應、 NPC 說">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://wayneh.tw/img/coc7.jpg">
+<meta property="article:published_time" content="2020-09-17T05:52:21.000Z">
+<meta property="article:modified_time" content="2020-12-03T07:01:50.681Z">
+<meta property="article:author" content="洪偉 Wei Hung">
+<meta property="article:tag" content="CoC 守密人指南">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wayneh.tw/img/coc7.jpg">
+
+<link rel="canonical" href="https://wayneh.tw/2020/09/17/3-fiction-1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>三、如何進行虛構敘事 | 偉恩與咖啡</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61272067-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-61272067-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="偉恩與咖啡" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">偉恩與咖啡</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">哲學、TRPG、雜談</p>
+      <a>
+        <img class="custom-logo-image" src="/avatar.jpg" alt="偉恩與咖啡">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="https://about.me/wayne930242" rel="noopener" target="_blank"><i class="fas fa-feather-alt fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-哲學">
+
+    <a href="/categories/philosophy/" rel="section"><i class="fas fa-coffee fa-fw"></i>哲學</a>
+
+  </li>
+        <li class="menu-item menu-item-trpg">
+
+    <a href="/categories/TRPG/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>TRPG</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://wayneh.tw/2020/09/17/3-fiction-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.png">
+      <meta itemprop="name" content="洪偉 Wei Hung">
+      <meta itemprop="description" content="哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="偉恩與咖啡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          三、如何進行虛構敘事
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-09-17 13:52:21" itemprop="dateCreated datePublished" datetime="2020-09-17T13:52:21+08:00">2020-09-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2020-12-03 15:01:50" itemprop="dateModified" datetime="2020-12-03T15:01:50+08:00">2020-12-03</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/09/17/3-fiction-1/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/09/17/3-fiction-1/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <img data-src="/img/coc7.jpg" class="">
+<p><em><strong>虛構敘事</strong></em> 是 TRPG 的主要模式和觀點，因此我們從這裡開始。然後，在我討論過 <em><strong>評價觀點</strong></em> 後，我們最後還會再一次回到這個觀點來。</p>
+<p>虛構敘事是關於「發生了什麼事」、「正在發生什麼事」、「將要發生什麼事」的觀點。這些事都發生在一個虛構為真實的世界。我們透過對話，談論虛構世界（彷彿它是真的），和世界中的一系列事件。事情首先就是如此地單純：玩家說 PC 所說、所做，而 GM 說世界如何回應、 NPC 說了又做了什麼。這些說的話、做的事，都是一個又一個的事件。所謂事件，就是「在一段時間內發生的一件看起來如此這般的事」。</p>
+<a id="more"></a>
+<p>當一個事件被說出，這個事件不會是獨立的，一個事件必須能夠被理解，才有對話延續的可能。而一個事件被理解的先決條件，是它必須存在某個<strong>脈絡</strong>中。至少，在<strong>虛構敘事</strong>中，一個事件的當然脈絡是「這個事件發生在世界中」，或許還有「這個事件在眼前發生」、「這個事件是過去發生的，而現在被我們知道」等。一個事件、一個事件彼此互為脈絡地聯繫起來，我們就有了一個故事。</p>
+<p>一種最特別、最重要的脈絡，決定了故事的合理性以及世界的真實感，那就是<strong>因果關聯</strong>。包括下面這些（前面的是原因、後面的是結果）對話：</p>
+<ul>
+<li>「可怕的地震震毀了大樓。」「許多人從窗戶口掉了出來。」</li>
+<li>「我奮力往對面的屋頂跳去。」「你成功了，你安穩地落在對面的屋頂上。」</li>
+<li>「我奮力往對面的屋頂跳去。」「很可惜，只差了一點點，你的手幾乎碰到了對面的屋頂，然而…」。</li>
+</ul>
+<p>可以清楚看到，一個事件在發生時，它存在於某個脈絡中，而當一個事件發生後，它也會成為隨後的事件的脈絡。如果這兩個事件有著清楚、決定性的關聯，那我們就可以說，這兩個事件具有<strong>因果關聯</strong>。</p>
+<p>一個事件與另一個事件如果有因果關聯，意思是，先發生的事件提供了後面的事件得以發生的決定性的動力，如果先發生的事件不存在，後面的事件就會像是天外飛來的。但這並不意味著天外飛來的事件就是獨立的，因為脈絡依然為當前事件提供了故事意義：</p>
+<ul>
+<li>「我向他揮了揮手，打了個招呼。」「他急忙地與你擦身而過，連看都沒有看你一眼。」</li>
+<li>「天色越來越黑。距離祭典開始只剩下兩個小時。」「『我們離開吧』，我哀傷地這麼說。」</li>
+</ul>
+<p>再讓我們仔細看看從「我向他揮了揮手，打了個招呼」到「他急忙地與你擦身而過，連看都沒有看你一眼」。會看到，這傳達了「這個人很急，他可能沒看到你」的訊息。在這，我們可以看到對話中常見的行為：<em><strong>預設</strong></em>。這些預設並沒有被說出，但是被脈絡所蘊含。如果這對話是妥當的，那像這樣的預設就是必要的。</p>
+<p>我們也會注意到，光是事件與事件的延伸，通常預設不少這種東西。譬如，從「地震」到「有人掉出來」，預設了「重力存在」。因果關聯預設了世界觀，而事實上，正是在虛構敘事的對話模式中，我們才得以窺見遊戲的世界觀（以後我們會看到，熟悉「預設」對恐怖遊戲來說更加重要）。此外，有些事件則預設了社會樣貌：</p>
+<ul>
+<li>「我向他問好。」「他點了點頭，問你『吃飽沒』。」</li>
+<li>「我向他問好。」「他對你微笑，並且比出了你們兄弟會的手勢。」</li>
+<li>「我向他問好。」「他向你比了中指。」</li>
+</ul>
+<p>如果後面的應對對於前面而言是妥當的，這代表了某種特定的社會樣貌。一旦這個社會樣貌弄錯了，那種不妥當的社交活動會帶來的後果，我們很快就能在虛構敘事中看到。</p>
+<p>你應該盡早習慣和意識到「預設」這件事，這除了有助於幫助你編織讓人印象深刻又簡潔的漂亮對白，這也能讓你更清楚知道，你們現在究竟在進行怎樣的對話，而我們很快就會看到，這對經營對話模式而言至關重要。</p>
+<p>我們現在來整理一下目前有的概念：</p>
+<ul>
+<li><strong>當前事件</strong>：正在發生什麼。</li>
+<li><strong>脈絡</strong>：過去的事件為當前事件提供脈絡：因果關聯是其中最重要的一種，它關係到事件的合理性以及世界的真實感。</li>
+<li><strong>預設</strong>：事件的發生預設了一些事情，有的是環境條件、有的是社會樣貌、有的是事件、有的則是世界觀。</li>
+</ul>
+<p>這涵蓋了我們在虛構敘事的觀點和對話模式下進行的大部分行為。接著，我們就來談 KP 該如何經營一個好的虛構敘事的對話模式。</p>
+<blockquote>
+<p>下一篇：<a href="/2020/09/18/4-fiction-2/">四、順利進行虛構敘事(1)：故事意圖</a></p>
+</blockquote>
+<hr />
+<p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.patreon.com/weihung"><i class="fab fa-patreon"></i> 定期支持（patreon）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.paypal.com/pools/c/8jLP7Wsi80"><i class="fab fa-paypal"></i> 單次支持（paypal）</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wayne930242">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.plurk.com/wayne930242">
+            <span class="icon">
+              <i class="fas fa-parking"></i>
+            </span>
+
+            <span class="label">Plurk</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/CoC-%E5%AE%88%E5%AF%86%E4%BA%BA%E6%8C%87%E5%8D%97/" rel="tag"># CoC 守密人指南</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/16/2-good-conversaion/" rel="prev" title="二、良好的對話">
+      <i class="fa fa-chevron-left"></i> 二、良好的對話
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/18/4-fiction-2/" rel="next" title="四、順利進行虛構敘事(1)：故事意圖">
+      四、順利進行虛構敘事(1)：故事意圖 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="洪偉 Wei Hung"
+      src="/logo.png">
+  <p class="site-author-name" itemprop="name">洪偉 Wei Hung</p>
+  <div class="site-description" itemprop="description">哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wayne930242" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wayne930242@gmail.com" title="E-Mail → mailto:wayne930242@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wayne930242" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/wayne930242" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.plurk.com/wayne930242" title="Plurk → https:&#x2F;&#x2F;www.plurk.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fas fa-parking fa-fw"></i>Plurk</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">洪偉 Wei Hung</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://wayneh.tw/2020/09/17/3-fiction-1/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://waynehtw.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://wayneh.tw/2020/09/17/3-fiction-1/";
+    this.page.identifier = "2020/09/17/3-fiction-1/";
+    this.page.title = "三、如何進行虛構敘事";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://waynehtw.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
