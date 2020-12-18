@@ -253,232 +253,220 @@
       
         <p>述詞邏輯完備性的證明。</p>
 <a id="more"></a>
-<h1 id="the-semantics">The Semantics</h1>
-<h2 id="definition-1-structure">Definition 1: Structure</h2>
-<p>A <span class="math inline">\(\left\langle\mathcal{I},\mathcal{J,}K,\eta,\zeta\right\rangle\)</span>-<strong><em>structure</em></strong> <span class="math inline">\(\mathcal{M}\)</span> is a complex of the form <span class="math inline">\(\mathcal{M} = \left\langle A,\ \ R = \left\{ r_{i} \middle| i\mathcal{\in I} \right\},\ \ F = \left\{ f_{j} \middle| j \in \mathcal{J} \right\},\ \ \left\{ e_{k} \middle| k \in K \right\} \right\rangle\)</span>, with associated functions <span class="math inline">\(\eta:\mathcal{I} \rightarrow \mathbb{N}^{+}\)</span> and <span class="math inline">\(\zeta\mathcal{:I \rightarrow}\mathbb{N}^{+}\)</span>, where</p>
+<h1>The Semantics</h1>
+<h2 id="Definition-1-Structure"><a class="header-anchor" href="#Definition-1-Structure">¶</a>Definition 1: Structure</h2>
+<p>A $\left\langle\mathcal{I},\mathcal{J,}K,\eta,\zeta\right\rangle$-<em><strong>structure</strong></em> $\mathcal{M}$ is a complex of the form $\mathcal{M} = \left\langle A,\ \ R = \left{ r_{i} \middle| i\mathcal{\in I} \right},\ \ F = \left{ f_{j} \middle| j \in \mathcal{J} \right},\ \ \left{ e_{k} \middle| k \in K \right} \right\rangle$, with associated functions $\eta:\mathcal{I} \rightarrow \mathbb{N}^{+}$ and $\zeta\mathcal{:I \rightarrow}\mathbb{N}^{+}$, where</p>
 <ul>
-<li><span class="math inline">\(A\)</span> is a non-empty set, called the <strong><em>domain</em></strong> of <span class="math inline">\(\mathcal{M}\)</span>;</li>
-<li>for each <span class="math inline">\(i \in \mathcal{I}\)</span>, <span class="math inline">\(r_{i}\)</span> is a <span class="math inline">\(\eta(i)\)</span>-ary relation on <span class="math inline">\(A\)</span>;</li>
-<li>for each <span class="math inline">\(j\mathcal{\in J}\)</span>, <span class="math inline">\(f_{j}\)</span> is a <span class="math inline">\(\zeta(j)\)</span>-ary function defined on <span class="math inline">\(A^{\zeta(j)}\)</span> (the <span class="math inline">\(\zeta(j)\)</span>-power Cartesian product of <span class="math inline">\(A\)</span>) to <span class="math inline">\(A\)</span>;</li>
-<li>for each <span class="math inline">\(k \in K\)</span>, <span class="math inline">\(e_{k} \in A\)</span>.</li>
+<li>$A$ is a non-empty set, called the <em><strong>domain</strong></em> of $\mathcal{M}$;</li>
+<li>for each $i \in \mathcal{I}$, $r_{i}$ is a $\eta(i)$-ary relation on $A$;</li>
+<li>for each $j\mathcal{\in J}$, $f_{j}$ is a $\zeta(j)$-ary function defined on $A^{\zeta(j)}$ (the $\zeta(j)$-power Cartesian product of $A$) to $A$;</li>
+<li>for each $k \in K$, $e_{k} \in A$.</li>
 </ul>
-<h2 id="definition-2-language">Definition 2: Language</h2>
-<p>A <strong><em>language</em></strong> <span class="math inline">\(\mathcal{L}\)</span> of the type <span class="math inline">\(\left\langle \mathcal{I},\mathcal{J},K,\eta,\zeta \right\rangle\)</span> is defined to be the set sequences consisting of the elements of the following sets: <span class="math inline">\(\left\{ \neg,\  \rightarrow ,\ \forall, = ,\left( , \right),v_{n}\ ,P_{i}\ ,F_{j}\ ,c_{k} \middle| n\mathbb{\in N},\ \ i\mathcal{\in I},\ \ j \in \mathcal{J}\mathrm{,}\mathrm{\ }k \in K \right\}\)</span> with associated formation rules as shown below.</p>
-<p><strong>Terms:</strong> the set <span class="math inline">\(\mathcal{T}\)</span> of terms is defined as:</p>
+<h2 id="Definition-2-Language"><a class="header-anchor" href="#Definition-2-Language">¶</a>Definition 2: Language</h2>
+<p>A <em><strong>language</strong></em> $\mathcal{L}$ of the type $\left\langle \mathcal{I},\mathcal{J},K,\eta,\zeta \right\rangle$ is defined to be the set sequences consisting of the elements of the following sets: $\left{ \neg,\  \rightarrow ,\ \forall, = ,\left( , \right),v_{n}\ ,P_{i}\ ,F_{j}\ ,c_{k} \middle| n\mathbb{\in N},\ \ i\mathcal{\in I},\ \ j \in \mathcal{J}\mathrm{,}\mathrm{\ }k \in K \right}$ with associated formation rules as shown below.</p>
+<p><strong>Terms:</strong> the set $\mathcal{T}$ of terms is defined as:</p>
 <ul>
-<li>(T1) <span class="math inline">\(v_{n} \in \mathcal{T}\)</span> for any <span class="math inline">\(n\mathbb{\in N}\)</span>.</li>
-<li>(T2) <span class="math inline">\(c_{k}\mathcal{\in T}\)</span> for any <span class="math inline">\(k \in K\)</span>.</li>
-<li>(T3) If <span class="math inline">\(\tau_{1},\ \tau_{2},\ldots,\tau_{m} \in \mathcal{T}\)</span>, <span class="math inline">\(F_{j}\left( \tau_{1},\ \tau_{2},\ldots,\tau_{m} \right)\mathcal{\in T}\)</span>, where <span class="math inline">\(\zeta\left( j \right) = m\)</span>.</li>
-<li>(T4) All elements of <span class="math inline">\(\mathcal{T}\)</span> are generated as in (T1) - (T3).</li>
+<li>(T1) $v_{n} \in \mathcal{T}$ for any $n\mathbb{\in N}$.</li>
+<li>(T2) $c_{k}\mathcal{\in T}$ for any $k \in K$.</li>
+<li>(T3) If $\tau_{1},\ \tau_{2},\ldots,\tau_{m} \in \mathcal{T}$, $F_{j}\left( \tau_{1},\ \tau_{2},\ldots,\tau_{m} \right)\mathcal{\in T}$, where $\zeta\left( j \right) = m$.</li>
+<li>(T4) All elements of $\mathcal{T}$ are generated as in (T1) - (T3).</li>
 </ul>
-<p><strong>Atomic formulae:</strong> the set <span class="math inline">\(\mathcal{A}\)</span> of atomic formulae is defined as:</p>
+<p><strong>Atomic formulae:</strong> the set $\mathcal{A}$ of atomic formulae is defined<br />
+as:</p>
 <ul>
-<li>(A1) If <span class="math inline">\(\tau,\ \iota \in \mathcal{T}\)</span>, then <span class="math inline">\(\tau = \iota \in \mathcal{A}\)</span>.</li>
-<li>(A2) If <span class="math inline">\(\tau_{1},\ \tau_{2},\ldots,\tau_{m}\mathcal{\in T}\)</span>, <span class="math inline">\(P_{i}\left( \tau_{1},\ \tau_{2},\ldots,\tau_{m} \right)\mathcal{\in A}\)</span>, where <span class="math inline">\(\eta\left( i \right) = m\)</span>.</li>
-<li>(A3) All elements of <span class="math inline">\(\mathcal{A}\)</span> are generated as in (A1) - (A2).</li>
+<li>(A1) If $\tau,\ \iota \in \mathcal{T}$, then $\tau = \iota \in \mathcal{A}$.</li>
+<li>(A2) If $\tau_{1},\ \tau_{2},\ldots,\tau_{m}\mathcal{\in T}$, $P_{i}\left( \tau_{1},\ \tau_{2},\ldots,\tau_{m} \right)\mathcal{\in A}$, where $\eta\left( i \right) = m$.</li>
+<li>(A3) All elements of $\mathcal{A}$ are generated as in (A1) - (A2).</li>
 </ul>
-<p><strong>Formulae:</strong> the set <span class="math inline">\(\mathcal{F}\)</span> of formulae is defined as:</p>
+<p><strong>Formulae:</strong> the set $\mathcal{F}$ of formulae is defined as:</p>
 <ul>
-<li>(F1) <span class="math inline">\(\mathcal{A} \subset \mathcal{F}\)</span>.</li>
-<li>(F2) If <span class="math inline">\(\phi \in \mathcal{F}\)</span>, then <span class="math inline">\(\neg\phi \in \mathcal{F}\)</span>.</li>
-<li>(F3) If <span class="math inline">\(\phi,\ \theta\mathcal{\in F}\)</span>, then <span class="math inline">\(\phi \rightarrow \theta\mathcal{\in F}\)</span>.</li>
-<li>(F4) If <span class="math inline">\(\phi \in \mathcal{F}\)</span> and <span class="math inline">\(n\mathbb{\in N}\)</span> then <span class="math inline">\(\forall v_{n}\phi \in \mathcal{F}\)</span>.</li>
-<li>(F5) All elements of <span class="math inline">\(\mathcal{F}\)</span> are generated as in (F1) - (F4).</li>
+<li>(F1) $\mathcal{A} \subset \mathcal{F}$.</li>
+<li>(F2) If $\phi \in \mathcal{F}$, then $\neg\phi \in \mathcal{F}$.</li>
+<li>(F3) If $\phi,\ \theta\mathcal{\in F}$, then $\phi \rightarrow \theta\mathcal{\in F}$.</li>
+<li>(F4) If $\phi \in \mathcal{F}$ and $n\mathbb{\in N}$ then $\forall v_{n}\phi \in \mathcal{F}$.</li>
+<li>(F5) All elements of $\mathcal{F}$ are generated as in (F1) - (F4).</li>
 </ul>
-<h2 id="definition-3-assignment">Definition 3: Assignment</h2>
-<p>An <strong><em>assignment</em></strong> <span class="math inline">\(\varsigma\)</span> of a structure <span class="math inline">\(\mathcal{M =}\left\langle A,R,F,\left\langle e_{k} \right\rangle \right\rangle\)</span> is a function defined on <span class="math inline">\(\mathbb{N}\)</span> to <span class="math inline">\(A\)</span>.</p>
-<h2 id="definition-4-semantic-value">Definition 4: Semantic Value</h2>
-<p>For <span class="math inline">\(\tau \in \mathcal{T}\)</span>, a structure <span class="math inline">\(\mathcal{M}\)</span> and an assignment <span class="math inline">\(\varsigma\)</span> of <span class="math inline">\(\mathcal{M}\)</span>, we define the <strong><em>semantic value of <span class="math inline">\(\bm{\tau}\)</span> at at <span class="math inline">\(\bm{\varsigma}\)</span> in <span class="math inline">\(\bm{\mathcal{M}}\)</span></em></strong>, notated by <span class="math inline">\(\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack\)</span>, as:</p>
+<h2 id="Definition-3-Assignment"><a class="header-anchor" href="#Definition-3-Assignment">¶</a>Definition 3: Assignment</h2>
+<p>An <em><strong>assignment</strong></em> $\varsigma$ of a structure $\mathcal{M =}\left\langle A,R,F,\left\langle e_{k} \right\rangle \right\rangle$ is a function defined on $\mathbb{N}$ to $A$.</p>
+<h2 id="Definition-4-Semantic-Value"><a class="header-anchor" href="#Definition-4-Semantic-Value">¶</a>Definition 4: Semantic Value</h2>
+<p>For $\tau \in \mathcal{T}$, a structure $\mathcal{M}$ and an assignment $\varsigma$ of $\mathcal{M}$, we define the <em><strong>semantic value of $\bm{\tau}$ at at $\bm{\varsigma}$ in $\bm{\mathcal{M}}$</strong></em>, notated by $\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack$, as:</p>
 <ul>
-<li><ol type="1">
-<li><em>Case 1</em>: <span class="math inline">\(\tau = v_{n}\)</span>, for some <span class="math inline">\(n \in \mathbb{N}\)</span>, <span class="math inline">\(\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack = \zeta\left( n \right)\)</span>.</li>
-</ol></li>
-<li><ol start="2" type="1">
-<li><em>Case 2</em>: <span class="math inline">\(\tau = c_{k}\)</span>, for some <span class="math inline">\(k \in K\)</span>, <span class="math inline">\(\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack = e_{k}\)</span>.</li>
-</ol></li>
-<li><ol start="3" type="1">
-<li><em>Case 3</em>: <span class="math inline">\(\tau = F_{j}\left( \tau_{1},\ldots,\tau_{\zeta(j)} \right)\)</span>, for some <span class="math inline">\(j \in \mathcal{J}\)</span> and <span class="math inline">\(\tau_{1},\ldots,\tau_{\zeta\left( j \right)} \in \mathcal{T}\)</span>, <span class="math inline">\(\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack = f_{j}\left( {\tau_{1}}^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack,\ldots,{\tau_{\zeta(j)}}^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack \right)\)</span>.</li>
-</ol></li>
+<li>(1) <em>Case 1</em>: $\tau = v_{n}$, for some $n \in \mathbb{N}$, $\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack = \zeta\left( n \right)$.</li>
+<li>(2) <em>Case 2</em>: $\tau = c_{k}$, for some $k \in K$, $\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack = e_{k}$.</li>
+<li>(3) <em>Case 3</em>: $\tau = F_{j}\left( \tau_{1},\ldots,\tau_{\zeta(j)} \right)$, for some $j \in \mathcal{J}$ and $\tau_{1},\ldots,\tau_{\zeta\left( j \right)} \in \mathcal{T}$, $\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack = f_{j}\left( {\tau_{1}}^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack,\ldots,{\tau_{\zeta(j)}}^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack \right)$.</li>
 </ul>
-<h2 id="definition-5-tarskis-definition-of-satisfaction">Definition 5: Tarski's Definition of Satisfaction</h2>
-<p>For a sentence <span class="math inline">\(\phi\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, a structure <span class="math inline">\(\mathcal{M}\)</span>, and an assignment <span class="math inline">\(\varsigma\)</span> of <span class="math inline">\(\mathcal{M}\)</span>, <strong><em>the satisfaction of</em></strong> <span class="math inline">\(\mathbf{\phi}\)</span> <strong><em>at</em></strong> <span class="math inline">\(\mathbf{\varsigma}\)</span> <strong><em>in</em></strong> <span class="math inline">\(\mathcal{M}\)</span>, notated by <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\phi\)</span>, is defined by:</p>
+<h2 id="Definition-5-Tarski’s-Definition-of-Satisfaction"><a class="header-anchor" href="#Definition-5-Tarski’s-Definition-of-Satisfaction">¶</a>Definition 5: Tarski’s Definition of Satisfaction</h2>
+<p>For a sentence $\phi$ in $\mathcal{L}$, a structure $\mathcal{M}$, and an assignment $\varsigma$ of $\mathcal{M}$, <em><strong>the satisfaction of</strong></em> $\mathbf{\phi}$ <em><strong>at</strong></em> $\mathbf{\varsigma}$ <em><strong>in</strong></em> $\mathcal{M}$, notated by $\mathcal{M} \vDash_{\varsigma}\phi$, is defined by:</p>
 <ul>
-<li><ol type="1">
-<li><span class="math inline">\(\phi \in \mathcal{A}\)</span>:</li>
-</ol>
+<li>(1) $\phi \in \mathcal{A}$:
 <ul>
-<li><ol type="a">
-<li><span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(\tau = \iota\)</span>: <span class="math inline">\(\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack\)</span> equals to <span class="math inline">\(\tau^{\mathcal{M}}\left\lbrack \iota \right\rbrack\)</span>.</li>
-</ol></li>
-<li><ol start="2" type="a">
-<li><span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(P_{i}\left( \tau_{1},\ \tau_{2},\ldots,\tau_{\zeta(i)} \right)\)</span>: <span class="math inline">\(r_{i}\left\langle \tau_{1},\ \tau_{2},\ldots,\tau_{\zeta(i)} \right\rangle \in R\)</span>.</li>
-</ol></li>
-</ul></li>
-<li><ol start="2" type="1">
-<li><span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(\neg\theta\)</span>: it is not the case that <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\theta\)</span>.</li>
-</ol></li>
-<li><ol start="3" type="1">
-<li><span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(\theta \rightarrow \psi\)</span>: <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\neg\theta\)</span> or <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\psi\)</span>.</li>
-</ol></li>
-<li><ol start="4" type="1">
-<li><span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(\forall v\theta\)</span>: for all <span class="math inline">\(a \in A\)</span>, <span class="math inline">\(\mathcal{M} \vDash_{\varsigma(i/a)}\theta\)</span>, where <span class="math inline">\(\varsigma(i/a)\)</span> is the assignment defined by</li>
-</ol></li>
+<li>(a) $\phi$ is the form of $\tau = \iota$: $\tau^{\mathcal{M}}\left\lbrack \varsigma \right\rbrack$ equals to $\tau^{\mathcal{M}}\left\lbrack \iota \right\rbrack$.</li>
+<li>(b) $\phi$ is the form of $P_{i}\left( \tau_{1},\ \tau_{2},\ldots,\tau_{\zeta(i)} \right)$: $r_{i}\left\langle \tau_{1},\ \tau_{2},\ldots,\tau_{\zeta(i)} \right\rangle \in R$.</li>
 </ul>
-<p><span class="math display">\[\varsigma(i/a)(n) = \begin{cases}\varsigma (j) &amp;\text{if } j \neq n \\ a &amp;\text{if } j = n \end{cases}\]</span></p>
-<h1 id="the-preparation">The Preparation</h1>
-<h2 id="definition-6-henkin-theory">Definition 6: Henkin Theory</h2>
-<p><span class="math inline">\(T\)</span> is a <strong><em>Henkin theory</em></strong> in a language <span class="math inline">\(\mathcal{L}\)</span> iff} for any <span class="math inline">\(\exists x\phi\)</span>, there is a constant <span class="math inline">\(c\)</span> in <span class="math inline">\(\mathcal{L}\)</span> such that <span class="math inline">\((\exists x\phi \rightarrow \phi(x/c)) \in T\)</span>. Such <span class="math inline">\(c\)</span> is called a <strong><em>Henkin witness</em></strong> in <span class="math inline">\(\mathcal{L}\)</span> of <span class="math inline">\(\exists x\phi\)</span> (notated by <span class="math inline">\(c_{\exists x\phi}\)</span>).</p>
-<h2 id="definition-7-alphabet-extension">Definition 7: Alphabet Extension</h2>
-<p>If <span class="math inline">\(\mathcal{L}\)</span> is a language. A language <span class="math inline">\(\mathcal{L}^{+}\)</span> is called an <strong><em>alphabet extension</em></strong> (or constant extension) of <span class="math inline">\(\mathcal{L}\)</span>, <em>iff</em> <span class="math inline">\(\mathcal{L}^{+}\)</span> is obtained by numerable steps of adding a new constant to <span class="math inline">\(\mathcal{L}\)</span>.</p>
-<h3 id="property-1">Property 1</h3>
-<p>If <span class="math inline">\(\Gamma\)</span> is a consistent set in <span class="math inline">\(\mathcal{L}\)</span>, then, for any formula <span class="math inline">\(\exists x\phi\)</span> and <span class="math inline">\(c\)</span> is a Henkin witness in <span class="math inline">\(\mathcal{L}^{+}\mathcal{( \supset L)}\)</span> (but not in <span class="math inline">\(\mathcal{L}\)</span>) of <span class="math inline">\(\exists x\phi\)</span>, <span class="math inline">\(\Gamma \cup \left\{ \exists x\phi \rightarrow \phi(x/c) \right\}\)</span> is consistent.</p>
+</li>
+<li>(2) $\phi$ is the form of $\neg\theta$: it is not the case that $\mathcal{M} \vDash_{\varsigma}\theta$.</li>
+<li>(3) $\phi$ is the form of $\theta \rightarrow \psi$: $\mathcal{M} \vDash_{\varsigma}\neg\theta$ or $\mathcal{M} \vDash_{\varsigma}\psi$.</li>
+<li>(4) $\phi$ is the form of $\forall v\theta$: for all $a \in A$, $\mathcal{M} \vDash_{\varsigma(i/a)}\theta$, where $\varsigma(i/a)$ is the assignment defined by</li>
+</ul>
+<p>$$\varsigma(i/a)(n) = \begin{cases}\varsigma (j) &amp;\text{if } j \neq n \ a &amp;\text{if } j = n \end{cases}$$</p>
+<h1>The Preparation</h1>
+<h2 id="Definition-6-Henkin-Theory"><a class="header-anchor" href="#Definition-6-Henkin-Theory">¶</a>Definition 6: Henkin Theory</h2>
+<p>$T$ is a <em><strong>Henkin theory</strong></em> in a language $\mathcal{L}$ iff} for any $\exists x\phi$, there is<br />
+a constant $c$ in $\mathcal{L}$ such that $(\exists x\phi \rightarrow \phi(x/c)) \in T$. Such $c$ is called a <em><strong>Henkin witness</strong></em> in $\mathcal{L}$ of $\exists x\phi$ (notated by $c_{\exists x\phi}$).</p>
+<h2 id="Definition-7-Alphabet-Extension"><a class="header-anchor" href="#Definition-7-Alphabet-Extension">¶</a>Definition 7: Alphabet Extension</h2>
+<p>If $\mathcal{L}$ is a language. A language $\mathcal{L}^{+}$ is called an <em><strong>alphabet extension</strong></em> (or constant extension) of $\mathcal{L}$, <em>iff</em> $\mathcal{L}^{+}$ is obtained by numerable steps of adding a new constant to $\mathcal{L}$.</p>
+<h3 id="Property-1"><a class="header-anchor" href="#Property-1">¶</a>Property 1</h3>
+<p>If $\Gamma$ is a consistent set in $\mathcal{L}$, then, for any formula $\exists x\phi$ and $c$ is a<br />
+Henkin witness in $\mathcal{L}^{+}\mathcal{( \supset L)}$ (but not in $\mathcal{L}$) of $\exists x\phi$, $\Gamma \cup \left{ \exists x\phi \rightarrow \phi(x/c) \right}$ is consistent.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
-<p>Suppose <span class="math inline">\(\Gamma \cup \left\{ \exists x\phi \rightarrow \phi(x/c) \right\}\)</span> is inconsistent.</p>
-<p>(⇒) <span class="math inline">\(\Gamma \vdash \neg(\exists x\phi \rightarrow \phi(x/c))\)</span>.</p>
-<p>(⇒) <span class="math inline">\(\Gamma \vdash \exists x\phi\)</span> and <span class="math inline">\(\Gamma \vdash \neg\phi(x/c)\)</span>.</p>
-<p>(⇒) <span class="math inline">\(\Gamma \vdash \forall x\neg\phi\)</span> since <span class="math inline">\(c\)</span> does not occur in any formula of <span class="math inline">\(\Gamma\)</span> (by rule of Generalization and <span class="math inline">\(\Gamma \vdash \neg\phi(x/c)\)</span>).</p>
-<p>(⇒) <span class="math inline">\(\Gamma \vdash \neg\exists x\phi\)</span>.</p>
-<p>(⇒) Then <span class="math inline">\(\Gamma\)</span> is inconsistent. A contradiction.</p>
+<p><em><strong>Proof.</strong></em></p>
+<p>Suppose $\Gamma \cup \left{ \exists x\phi \rightarrow \phi(x/c) \right}$ is inconsistent.</p>
+<p>(⇒) $\Gamma \vdash \neg(\exists x\phi \rightarrow \phi(x/c))$.</p>
+<p>(⇒) $\Gamma \vdash \exists x\phi$ and $\Gamma \vdash \neg\phi(x/c)$.</p>
+<p>(⇒) $\Gamma \vdash \forall x\neg\phi$ since $c$ does not occur in any formula of $\Gamma$ (by rule of Generalization and $\Gamma \vdash \neg\phi(x/c)$).</p>
+<p>(⇒) $\Gamma \vdash \neg\exists x\phi$.</p>
+<p>(⇒) Then $\Gamma$ is inconsistent. A contradiction.</p>
 </blockquote>
-<h2 id="definition-8-deductive-closure">Definition 8: Deductive Closure</h2>
-<p>Given <span class="math inline">\(\Gamma\)</span> is a set of sentences in <span class="math inline">\(\mathcal{L}\)</span>. <span class="math inline">\(\overline{\Gamma}\)</span> is called a <strong><em>deductive closure</em></strong> of <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, <em>iff</em> <span class="math inline">\(\overline{\Gamma} = \left\{ \phi \middle| \Gamma \vdash \phi \right\}\)</span>, which <span class="math inline">\(\phi\)</span> is in <span class="math inline">\(\mathcal{L}\)</span>.</p>
-<h3 id="property-2">Property 2</h3>
-<p>A set of sentences <span class="math inline">\(\Gamma\)</span> is a consistent, <em>iff</em> <span class="math inline">\(\overline{\Gamma}\)</span> is a consistent.</p>
+<h2 id="Definition-8-Deductive-Closure"><a class="header-anchor" href="#Definition-8-Deductive-Closure">¶</a>Definition 8: Deductive Closure</h2>
+<p>Given $\Gamma$ is a set of sentences in $\mathcal{L}$. $\overline{\Gamma}$ is called a <em><strong>deductive closure</strong></em> of $\Gamma$ in $\mathcal{L}$, <em>iff</em> $\overline{\Gamma} = \left{ \phi \middle| \Gamma \vdash \phi \right}$, which $\phi$ is in $\mathcal{L}$.</p>
+<h3 id="Property-2"><a class="header-anchor" href="#Property-2">¶</a>Property 2</h3>
+<p>A set of sentences $\Gamma$ is a consistent, <em>iff</em> $\overline{\Gamma}$ is a consistent.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
+<p><em><strong>Proof.</strong></em></p>
 <p>Trivial.</p>
 </blockquote>
-<h1 id="the-proof">The Proof</h1>
-<h2 id="lemma-1-full-extension">Lemma 1: Full Extension</h2>
-<p>For any consistent set of sentences <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, there is a set of sentences <span class="math inline">\(\Sigma\)</span> in <span class="math inline">\(\mathcal{L}^{+}\)</span> such that (1) <span class="math inline">\(\Gamma \subset \Sigma\)</span> and (2) <span class="math inline">\(\Sigma\)</span> is a consistent Henkin theory in <span class="math inline">\(\mathcal{L}^{+}\)</span>.</p>
+<h1>The Proof</h1>
+<h2 id="Lemma-1-Full-Extension"><a class="header-anchor" href="#Lemma-1-Full-Extension">¶</a>Lemma 1: Full Extension</h2>
+<p>For any consistent set of sentences $\Gamma$ in $\mathcal{L}$, there is a set of sentences $\Sigma$ in $\mathcal{L}^{+}$ such that (1) $\Gamma \subset \Sigma$ and (2) $\Sigma$ is a consistent Henkin theory in $\mathcal{L}^{+}$.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
-<p>Given <span class="math inline">\(\Gamma\)</span> is a consistent set in <span class="math inline">\(\mathcal{L}\)</span>.</p>
-<p>We define the sequences <span class="math inline">\(\left\langle \Gamma_{n} \right\rangle\)</span> recursively:</p>
+<p><em><strong>Proof.</strong></em></p>
+<p>Given $\Gamma$ is a consistent set in $\mathcal{L}$.</p>
+<p>We define the sequences $\left\langle \Gamma_{n} \right\rangle$ recursively:</p>
 <blockquote>
-<ol type="1">
-<li><span class="math inline">\(\Gamma_{0} = \Gamma\)</span> and <span class="math inline">\(\mathcal{L}_{0}\mathcal{= L}\)</span>;</li>
-<li><span class="math inline">\(\Gamma_{k} = \Gamma_{k - 1} \cup \left\{ \exists x_{k - 1}\phi_{k - 1} \rightarrow \phi_{k - 1}(x_{k - 1}/c_{\exists x_{k - 1}\phi_{k - 1}}) \right\}\)</span> and <span class="math inline">\(\mathcal{L}_{k} = \mathcal{L}_{k - 1} + \left\{ c_{\exists x_{k - 1}\phi_{k - 1}} \right\}\)</span>, where <span class="math inline">\(c_{k - 1}\)</span> is a new Henkin constant of <span class="math inline">\(\exists x_{k - 1}\phi_{k - 1}\)</span>.</li>
+<ol>
+<li>$\Gamma_{0} = \Gamma$ and $\mathcal{L}_{0}\mathcal{= L}$;</li>
+<li>$\Gamma_{k} = \Gamma_{k - 1} \cup \left{ \exists x_{k - 1}\phi_{k - 1} \rightarrow \phi_{k - 1}(x_{k - 1}/c_{\exists x_{k - 1}\phi_{k - 1}}) \right}$ and $\mathcal{L}<em>{k} = \mathcal{L}</em>{k - 1} + \left{ c_{\exists x_{k - 1}\phi_{k - 1}} \right}$, where $c_{k - 1}$ is a new Henkin constant of $\exists x_{k - 1}\phi_{k - 1}$.</li>
 </ol>
 </blockquote>
-<p>Then we define <span class="math inline">\(\Gamma^{*} = \bigcup_{k = 0}^{\infty}\Gamma_{k}\)</span> and<span class="math inline">\(\mathcal{L}^{+} = \bigcup_{k = 0}^{\infty}\mathcal{L}_{k}\)</span>.</p>
-<p>By <strong>Property 1</strong>, <span class="math inline">\(\Gamma_{n}\)</span> is consistent for any <span class="math inline">\(n\)</span> (easily proved by induction), and <span class="math inline">\(\left\langle \Gamma_{n} \right\rangle\)</span> is a chain. Therefore, <span class="math inline">\(\Gamma^{*}\)</span> should be consistent unless entail a contradiction. So do <span class="math inline">\(\overline{\Gamma^{*}}\)</span> by <strong>Property 2</strong>.</p>
-<p>For any <span class="math inline">\(\exists x\phi\)</span> such that <span class="math inline">\(\overline{\Gamma^{*}} \vdash \exists x\phi\)</span>, there is some <span class="math inline">\(n\)</span> such that <span class="math inline">\(\exists x\phi\)</span> is equal to <span class="math inline">\(\exists x_{n}\phi_{n}\)</span> and <span class="math inline">\(\Gamma^{*}\  \vdash \exists x_{n}\phi_{n} \rightarrow \phi_{n}(x_{n}/c_{\exists x_{n}\phi_{n}})\)</span></p>
-<p>(⇒) <span class="math inline">\(\exists x_{n}\phi_{n} \rightarrow \phi_{n}(x_{n}/c_{\exists x_{n}\phi_{n}}) \in \overline{\Gamma^{*}}\)</span> by definition.</p>
-<p>(⇒) <span class="math inline">\(\overline{\Gamma^{*}}\)</span> is a Henkin theory in <span class="math inline">\(\mathcal{L}^{+}\)</span>.</p>
+<p>Then we define $\Gamma^{*} = \bigcup_{k = 0}^{\infty}\Gamma_{k}$ and$\mathcal{L}^{+} = \bigcup_{k = 0}^{\infty}\mathcal{L}_{k}$.</p>
+<p>By <strong>Property 1</strong>, $\Gamma_{n}$ is consistent for any $n$ (easily proved by induction), and $\left\langle \Gamma_{n} \right\rangle$ is a chain. Therefore, $\Gamma^{<em>}$ should be consistent unless entail a contradiction. So do $\overline{\Gamma^{</em>}}$ by <strong>Property 2</strong>.</p>
+<p>For any $\exists x\phi$ such that $\overline{\Gamma^{<em>}} \vdash \exists x\phi$, there is some $n$ such that $\exists x\phi$ is equal to $\exists x_{n}\phi_{n}$ and $\Gamma^{</em>}\  \vdash \exists x_{n}\phi_{n} \rightarrow \phi_{n}(x_{n}/c_{\exists x_{n}\phi_{n}})$</p>
+<p>(⇒) $\exists x_{n}\phi_{n} \rightarrow \phi_{n}(x_{n}/c_{\exists x_{n}\phi_{n}}) \in \overline{\Gamma^{*}}$ by definition.</p>
+<p>(⇒) $\overline{\Gamma^{*}}$ is a Henkin theory in $\mathcal{L}^{+}$.</p>
 </blockquote>
-<h2 id="definition-9-syntactic-complete">Definition 9: Syntactic Complete</h2>
-<p>A set of sentences in <span class="math inline">\(\mathcal{L}\)</span>, <span class="math inline">\(\Gamma\)</span>, is <strong><em>complete</em></strong> <em>iff</em>, for any <span class="math inline">\(\phi\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, either <span class="math inline">\(\Gamma \vdash \phi\)</span> or <span class="math inline">\(\Gamma \vdash \neg\phi\)</span>. If <span class="math inline">\(\Sigma\)</span> is a subset of <span class="math inline">\(\Gamma\)</span>, we say <span class="math inline">\(\Gamma\)</span> is a <strong><em>complete extension</em></strong> of <span class="math inline">\(\Sigma\)</span>.</p>
-<h2 id="lemma-2-complete-extension">Lemma 2: Complete Extension</h2>
-<p>For any consistent set of sentences <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, there is a set of sentences <span class="math inline">\(\Sigma\)</span> in <span class="math inline">\(\mathcal{L}\)</span> such that <span class="math inline">\(\Sigma\)</span> is a consistent complete extension of <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>.</p>
+<h2 id="Definition-9-Syntactic-Complete"><a class="header-anchor" href="#Definition-9-Syntactic-Complete">¶</a>Definition 9: Syntactic Complete</h2>
+<p>A set of sentences in $\mathcal{L}$, $\Gamma$, is <em><strong>complete</strong></em> <em>iff</em>, for any $\phi$ in $\mathcal{L}$, either $\Gamma \vdash \phi$ or $\Gamma \vdash \neg\phi$. If $\Sigma$ is a subset of $\Gamma$, we say $\Gamma$ is a <em><strong>complete extension</strong></em> of $\Sigma$.</p>
+<h2 id="Lemma-2-Complete-Extension"><a class="header-anchor" href="#Lemma-2-Complete-Extension">¶</a>Lemma 2: Complete Extension</h2>
+<p>For any consistent set of sentences $\Gamma$ in $\mathcal{L}$, there is a set of sentences $\Sigma$ in $\mathcal{L}$ such that $\Sigma$ is a consistent complete extension of $\Gamma$ in $\mathcal{L}$.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
-<p>Given <span class="math inline">\(\Gamma\)</span> is a consistent set in <span class="math inline">\(\mathcal{L}\)</span>. We define the sequences <span class="math inline">\(\left\langle \Gamma_{n} \right\rangle\)</span> recursively:</p>
+<p><em><strong>Proof.</strong></em></p>
+<p>Given $\Gamma$ is a consistent set in $\mathcal{L}$.<br />
+We define the sequences $\left\langle \Gamma_{n} \right\rangle$ recursively:</p>
 <blockquote>
-<ol type="1">
-<li><span class="math inline">\(\Gamma_{0} = \Gamma\)</span></li>
-<li><span class="math inline">\(\Gamma_{k} = \Gamma_{k - 1} \cup \left\{ \phi_{k - 1} \right\}\)</span> if <span class="math inline">\(\Gamma_{k - 1} \cup \left\{ \phi_{k - 1} \right\}\)</span> is consistent, <span class="math inline">\(\Gamma_{k} = \Gamma_{k - 1}\)</span> otherwise, where <span class="math inline">\(\left\langle \phi_{n} \right\rangle\)</span> is the sequence of all sentences in <span class="math inline">\(\mathcal{L}\)</span>.</li>
+<ol>
+<li>$\Gamma_{0} = \Gamma$</li>
+<li>$\Gamma_{k} = \Gamma_{k - 1} \cup \left{ \phi_{k - 1} \right}$ if $\Gamma_{k - 1} \cup \left{ \phi_{k - 1} \right}$ is consistent, $\Gamma_{k} = \Gamma_{k - 1}$ otherwise, where $\left\langle \phi_{n} \right\rangle$ is the sequence of all sentences in $\mathcal{L}$.</li>
 </ol>
 </blockquote>
-<p>Then we define <span class="math inline">\(\Gamma^{*} = \bigcup_{k = 0}^{\infty}\Gamma_{k}\)</span>.</p>
-<p>Easily check <span class="math inline">\(\Gamma^{*}\)</span> is consistent and complete.</p>
+<p>Then we define $\Gamma^{*} = \bigcup_{k = 0}^{\infty}\Gamma_{k}$.</p>
+<p>Easily check $\Gamma^{*}$ is consistent and complete.</p>
 </blockquote>
-<h2 id="the-extension-lemma">The Extension Lemma</h2>
-<p>For any consistent set of sentences <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, we can extend <span class="math inline">\(\Gamma\)</span> to a consistent complete Henkin theory in <span class="math inline">\(\mathcal{L}^{+}\)</span>.</p>
+<h2 id="The-Extension-Lemma"><a class="header-anchor" href="#The-Extension-Lemma">¶</a>The Extension Lemma</h2>
+<p>For any consistent set of sentences $\Gamma$ in $\mathcal{L}$, we can extend $\Gamma$ to a consistent complete Henkin theory in $\mathcal{L}^{+}$.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
+<p><em><strong>Proof.</strong></em></p>
 <blockquote>
 <p>So far, we have these two lemmas:</p>
 <ul>
-<li>For any consistent set of sentences <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, we can extend <span class="math inline">\(\Gamma\)</span> to a consistent Henkin theory <span class="math inline">\(\Gamma^{*}\)</span> in <span class="math inline">\(\mathcal{L}^{+}\)</span>. We can call <span class="math inline">\(\Gamma^{*}\)</span> a <strong><em>full-extension</em></strong> <span class="math inline">\(\Gamma\)</span>.</li>
-<li>For any consistent set of sentences <span class="math inline">\(\Gamma\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, we can extend <span class="math inline">\(\Gamma\)</span> to a consistent complete set <span class="math inline">\(\Gamma^{*}\)</span> in <span class="math inline">\(\mathcal{L}\)</span>. We can call <span class="math inline">\(\Gamma^{*}\)</span> a <strong><em>complete-extension</em></strong> of <span class="math inline">\(\Gamma\)</span>.</li>
+<li>For any consistent set of sentences $\Gamma$ in $\mathcal{L}$, we can extend $\Gamma$ to a consistent Henkin theory $\Gamma^{<em>}$ in $\mathcal{L}^{+}$. We can call $\Gamma^{</em>}$ a <em><strong>full-extension</strong></em> $\Gamma$.</li>
+<li>For any consistent set of sentences $\Gamma$ in $\mathcal{L}$, we can extend $\Gamma$ to a consistent complete set $\Gamma^{<em>}$ in $\mathcal{L}$. We can call $\Gamma^{</em>}$ a <em><strong>complete-extension</strong></em> of $\Gamma$.</li>
 </ul>
 </blockquote>
-<p>Given <span class="math inline">\(\Gamma\)</span> is a consistent set in <span class="math inline">\(\mathcal{L}\)</span>.</p>
-<p>We define the sequences <span class="math inline">\(\left\langle \Gamma_{n} \right\rangle\)</span>, <span class="math inline">\(\left\langle \Sigma_{n} \right\rangle\)</span> and <span class="math inline">\(\left\langle \mathcal{L}_{n} \right\rangle\)</span> recursively:</p>
+<p>Given $\Gamma$ is a consistent set in $\mathcal{L}$.</p>
+<p>We define the sequences $\left\langle \Gamma_{n} \right\rangle$, $\left\langle \Sigma_{n} \right\rangle$ and $\left\langle \mathcal{L}_{n} \right\rangle$ recursively:</p>
 <blockquote>
-<ol type="1">
-<li><span class="math inline">\(\Gamma_{0} = \Gamma\)</span>, <span class="math inline">\(\ \mathcal{L}_{0}\mathcal{= L}\)</span>;</li>
-<li>Define <span class="math inline">\(\Sigma_{n}\)</span> as a full-extension of <span class="math inline">\(\Gamma_{n - 1}\)</span> in <span class="math inline">\(\mathcal{L}_{n}\)</span> (defined as the language defined as the proof of <strong>Lemma 1</strong>), <span class="math inline">\(\Gamma_{n}\)</span> as a compete-extension of <span class="math inline">\(\Sigma_{n}\)</span>.</li>
+<ol>
+<li>$\Gamma_{0} = \Gamma$, $\ \mathcal{L}_{0}\mathcal{= L}$;</li>
+<li>Define $\Sigma_{n}$ as a full-extension of $\Gamma_{n - 1}$ in $\mathcal{L}<em>{n}$ (defined as the language defined as the proof of <strong>Lemma 1</strong>), $\Gamma</em>{n}$ as a compete-extension of $\Sigma_{n}$.</li>
 </ol>
 </blockquote>
-<p>Then we define <span class="math inline">\(\Gamma^{*} = \bigcup_{k = 0}^{\infty}\Gamma_{k}\)</span>, <span class="math inline">\(\Sigma^{*} = \bigcup_{k = 1}^{\infty}\Sigma_{k}\)</span> and <span class="math inline">\(\mathcal{L}^{+} = \bigcup_{k = 1}^{\infty}\mathcal{L}_{k}\)</span>.</p>
-<p>We can easily check <span class="math inline">\(\Gamma^{*} = \Sigma^{*}\)</span>.</p>
-<p>So <span class="math inline">\(\Gamma^{*}\)</span> is a consistent complete Henkin theory in <span class="math inline">\(\mathcal{L}^{+}\)</span> which contains <span class="math inline">\(\Gamma\)</span>.</p>
+<p>Then we define $\Gamma^{<em>} = \bigcup_{k = 0}^{\infty}\Gamma_{k}$, $\Sigma^{</em>} = \bigcup_{k = 1}^{\infty}\Sigma_{k}$ and $\mathcal{L}^{+} = \bigcup_{k = 1}^{\infty}\mathcal{L}_{k}$.</p>
+<p>We can easily check $\Gamma^{<em>} = \Sigma^{</em>}$.</p>
+<p>So $\Gamma^{*}$ is a consistent complete Henkin theory in $\mathcal{L}^{+}$ which contains $\Gamma$.</p>
 </blockquote>
-<h2 id="the-model-existence-lemma">The Model Existence Lemma</h2>
-<p>If a set of sentences <span class="math inline">\(\Gamma\)</span> is a complete consistent Henkin theory in <span class="math inline">\(\mathcal{L}\)</span>, then <span class="math inline">\(\Gamma\)</span> has a model.</p>
+<h2 id="The-Model-Existence-Lemma"><a class="header-anchor" href="#The-Model-Existence-Lemma">¶</a>The Model Existence Lemma</h2>
+<p>If a set of sentences $\Gamma$ is a complete consistent Henkin theory in $\mathcal{L}$, then $\Gamma$<br />
+has a model.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
-<p>Let <span class="math inline">\(\left\{ P_{n} \right\}\)</span> be the set of predicate symbols in <span class="math inline">\(\mathcal{L}\)</span> and <span class="math inline">\(\left\{ c_{n} \right\}\)</span> be the set of all constants in <span class="math inline">\(\mathcal{L}\)</span>, <span class="math inline">\(n\mathbb{\in N}\)</span>.</p>
-<p>We can define a relation on terms <span class="math inline">\(\sim\)</span> as: <span class="math inline">\(\iota\sim\tau\)</span> <em>iff</em> <span class="math inline">\(\Gamma \vdash \iota = \tau\)</span>. <span class="math inline">\(\sim\)</span> has these properties:</p>
+<p><em><strong>Proof.</strong></em></p>
+<p>Let $\left{ P_{n} \right}$ be the set of predicate symbols in $\mathcal{L}$ and $\left{ c_{n} \right}$ be the set of all constants in $\mathcal{L}$, $n\mathbb{\in N}$.</p>
+<p>We can define a relation on terms $\sim$ as: $\iota\sim\tau$ <em>iff</em> $\Gamma \vdash \iota = \tau$. $\sim$ has these properties:</p>
 <blockquote>
 <ul>
-<li>Reflexivity: For any constant <span class="math inline">\(\iota\)</span>, <span class="math inline">\(\Gamma \vdash \iota = \iota\)</span>.</li>
-<li>Symmetry: For any constant <span class="math inline">\(\iota\)</span> and <span class="math inline">\(\tau\)</span>, if <span class="math inline">\(\Gamma \vdash \iota = \tau\)</span>, then <span class="math inline">\(\Gamma \vdash \tau = \iota\)</span>.</li>
-<li>Transitivity: For any constant <span class="math inline">\(\iota\)</span>, <span class="math inline">\(\tau\)</span> and <span class="math inline">\(\pi\)</span>, if <span class="math inline">\(\Gamma \vdash \iota = \tau\)</span> and <span class="math inline">\(\Gamma \vdash \tau = \pi\)</span>, then <span class="math inline">\(\Gamma \vdash \iota = \pi\)</span>.</li>
+<li>Reflexivity: For any constant $\iota$, $\Gamma \vdash \iota = \iota$.</li>
+<li>Symmetry: For any constant $\iota$ and $\tau$, if $\Gamma \vdash \iota = \tau$, then $\Gamma \vdash \tau = \iota$.</li>
+<li>Transitivity: For any constant $\iota$, $\tau$ and $\pi$, if $\Gamma \vdash \iota = \tau$ and $\Gamma \vdash \tau = \pi$, then $\Gamma \vdash \iota = \pi$.</li>
 </ul>
 </blockquote>
-<p>That is, <span class="math inline">\(\sim\)</span> is an equivalence relation. And we can define an equivalence class by <span class="math inline">\(\left\lbrack \iota \right\rbrack \in \left\{ \iota \right\}/\sim\)</span>.</p>
-<p>Let <span class="math inline">\(\mathcal{M =}\left\langle A,\ R = \left\{ r_{i} \middle| i\mathcal{\in I} \right\},F = \left\{ f_{j} \middle| i \in \mathcal{J} \right\},E = \left\{ e_{k} \right\} \right\rangle\)</span> with <span class="math inline">\(\eta\mathcal{:I \rightarrow}\mathbb{N}^{+}\)</span> and <span class="math inline">\(\zeta:\mathcal{J \rightarrow}\mathbb{N}^{+}\)</span>:</p>
+<p>That is, $\sim$ is an equivalence relation. And we can define an equivalence class by $\left\lbrack \iota \right\rbrack \in \left{ \iota \right}/\sim$.</p>
+<p>Let $\mathcal{M =}\left\langle A,\ R = \left{ r_{i} \middle| i\mathcal{\in I} \right},F = \left{ f_{j} \middle| i \in \mathcal{J} \right},E = \left{ e_{k} \right} \right\rangle$ with $\eta\mathcal{:I \rightarrow}\mathbb{N}^{+}$ and $\zeta:\mathcal{J \rightarrow}\mathbb{N}^{+}$:</p>
 <blockquote>
-<ol type="1">
-<li>We define <span class="math inline">\(A = \left\{ \left\lbrack c_{n} \right\rbrack \right\}\)</span>.</li>
-<li>Suppose <span class="math inline">\(P_{i}\)</span> is an <span class="math inline">\(k_{i}\)</span>-ary relation of <span class="math inline">\(\mathcal{L}\)</span>, we define <span class="math inline">\(r_{i}\)</span> and <span class="math inline">\(\eta\)</span> as: <span class="math inline">\(r_{i}\left( \left\lbrack \tau_{1} \right\rbrack,\left\lbrack \tau_{2} \right\rbrack,\ldots,\left\lbrack \tau_{k_{i}} \right\rbrack \right)\)</span> <em>iff</em> <span class="math inline">\(P_{i}\left( \tau_{1},\tau_{2},\ldots,\tau_{k_{i}} \right) \in \text{\ Γ}\ \)</span> and <span class="math inline">\(\eta\left( i \right) = k_{i}\)</span>.</li>
-<li>Suppose <span class="math inline">\(F_{j}\)</span> is an <span class="math inline">\(k_{j}\)</span>-ary function of <span class="math inline">\(\mathcal{L}\)</span>, we define <span class="math inline">\(f_{j}\)</span> and <span class="math inline">\(\zeta\)</span> as: <span class="math inline">\(f_{j}\left( \left\lbrack \tau_{1} \right\rbrack,\left\lbrack \tau_{2} \right\rbrack,\ldots,\left\lbrack \tau_{k_{j}} \right\rbrack \right) = F_{j}\left( \tau_{1},\tau_{2},\ldots,\tau_{k_{j}} \right)\)</span> and <span class="math inline">\(\zeta\left( j \right) = k_{j}\)</span>.</li>
-<li>We define <span class="math inline">\(e_{k} = \left\lbrack c_{k} \right\rbrack\)</span>.</li>
+<ol>
+<li>We define $A = \left{ \left\lbrack c_{n} \right\rbrack \right}$.</li>
+<li>Suppose $P_{i}$ is an $k_{i}$-ary relation of $\mathcal{L}$, we define $r_{i}$ and $\eta$ as: $r_{i}\left( \left\lbrack \tau_{1} \right\rbrack,\left\lbrack \tau_{2} \right\rbrack,\ldots,\left\lbrack \tau_{k_{i}} \right\rbrack \right)$ <em>iff</em> $P_{i}\left( \tau_{1},\tau_{2},\ldots,\tau_{k_{i}} \right) \in \text{\ Γ}\ $ and $\eta\left( i \right) = k_{i}$.</li>
+<li>Suppose $F_{j}$ is an $k_{j}$-ary function of $\mathcal{L}$, we define $f_{j}$ and $\zeta$ as: $f_{j}\left( \left\lbrack \tau_{1} \right\rbrack,\left\lbrack \tau_{2} \right\rbrack,\ldots,\left\lbrack \tau_{k_{j}} \right\rbrack \right) = F_{j}\left( \tau_{1},\tau_{2},\ldots,\tau_{k_{j}} \right)$ and $\zeta\left( j \right) = k_{j}$.</li>
+<li>We define $e_{k} = \left\lbrack c_{k} \right\rbrack$.</li>
 </ol>
 </blockquote>
-<p>We need to show that, for any <span class="math inline">\(\phi\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, <span class="math inline">\(\mathcal{M \vDash}\phi\)</span>, <em>iff</em> <span class="math inline">\(\Gamma \vdash \phi\)</span>. <em>Note</em>: we can also define the assignment function <span class="math inline">\(\varsigma\mathbb{:N \rightarrow}A\)</span>.</p>
-<p><strong><em>Basis case</em></strong>: <span class="math inline">\(\phi\)</span> is atomic.</p>
-<p><em>Case 1</em>: <span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(\tau = \iota\)</span>.</p>
+<p>We need to show that, for any $\phi$ in $\mathcal{L}$, $\mathcal{M \vDash}\phi$, <em>iff</em> $\Gamma \vdash \phi$. <em>Note</em>: we can also define the assignment function $\varsigma\mathbb{:N \rightarrow}A$.</p>
+<p><em><strong>Basis case</strong></em>: $\phi$ is atomic.</p>
+<p><em>Case 1</em>: $\phi$ is the form of $\tau = \iota$.</p>
 <blockquote>
-<p><span class="math inline">\(\mathcal{M \vDash}\phi\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span>, <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\phi\)</span> i.e. <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\tau = \iota\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span>, <span class="math inline">\(\tau^{\mathcal{M}}\lbrack\varsigma\rbrack = \iota^{\mathcal{M}}\lbrack\varsigma\rbrack\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span>, <span class="math inline">\(\tau^{\mathcal{M}}\lbrack\varsigma\rbrack\sim\iota^{\mathcal{M}}\lbrack\varsigma\rbrack\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \tau = \iota\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \phi\)</span>.</p>
+<p>$\mathcal{M \vDash}\phi$.</p>
+<p>(⇔) For any $\varsigma$, $\mathcal{M} \vDash_{\varsigma}\phi$ i.e. $\mathcal{M} \vDash_{\varsigma}\tau = \iota$.</p>
+<p>(⇔) For any $\varsigma$, $\tau^{\mathcal{M}}\lbrack\varsigma\rbrack = \iota^{\mathcal{M}}\lbrack\varsigma\rbrack$.</p>
+<p>(⇔) For any $\varsigma$, $\tau<sup>{\mathcal{M}}\lbrack\varsigma\rbrack\sim\iota</sup>{\mathcal{M}}\lbrack\varsigma\rbrack$.</p>
+<p>(⇔) $\Gamma \vdash \tau = \iota$.</p>
+<p>(⇔) $\Gamma \vdash \phi$.</p>
 </blockquote>
-<p><em>Case 2</em>: <span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(P(\tau_{1},\tau_{2},\ldots,\tau_{n})\)</span>.</p>
+<p><em>Case 2</em>: $\phi$ is the form of $P(\tau_{1},\tau_{2},\ldots,\tau_{n})$.</p>
 <blockquote>
-<p><span class="math inline">\(\mathcal{M \vDash}\phi\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span>, <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\phi\)</span> i.e. <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}P(\tau_{1},\tau_{2},\ldots,\tau_{n})\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span>, there is some <span class="math inline">\(i\)</span>, such that <span class="math inline">\(r_{i}\left( {\tau_{1}}^{\mathcal{M}}\lbrack\varsigma\rbrack,{\tau_{2}}^{\mathcal{M}}\lbrack\varsigma\rbrack,\ldots,{\tau_{n}}^{\mathcal{M}}\lbrack\varsigma\rbrack \right)\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash P(\tau_{1},\tau_{2},\ldots,\tau_{n})\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \phi\)</span>.</p>
+<p>$\mathcal{M \vDash}\phi$.</p>
+<p>(⇔) For any $\varsigma$, $\mathcal{M} \vDash_{\varsigma}\phi$ i.e. $\mathcal{M} \vDash_{\varsigma}P(\tau_{1},\tau_{2},\ldots,\tau_{n})$.</p>
+<p>(⇔) For any $\varsigma$, there is some $i$, such that $r_{i}\left( {\tau_{1}}<sup>{\mathcal{M}}\lbrack\varsigma\rbrack,{\tau_{2}}</sup>{\mathcal{M}}\lbrack\varsigma\rbrack,\ldots,{\tau_{n}}^{\mathcal{M}}\lbrack\varsigma\rbrack \right)$.</p>
+<p>(⇔) $\Gamma \vdash P(\tau_{1},\tau_{2},\ldots,\tau_{n})$.</p>
+<p>(⇔) $\Gamma \vdash \phi$.</p>
 </blockquote>
-<p><strong><em>Inductive step</em></strong>: for some <span class="math inline">\(\phi\)</span>, we assume that all proper subformulae of <span class="math inline">\(\phi\)</span> hold the result as the inductive hypothesis.</p>
-<p><em>Case 1</em>: <span class="math inline">\(\phi\)</span> is the form of <span class="math inline">\(\neg\psi\)</span>. Clearly hold by definition and completeness of <span class="math inline">\(\Gamma\)</span>.</p>
-<p><em>Case 2</em>: <span class="math inline">\(\phi\)</span> is the form <span class="math inline">\(\psi \rightarrow \theta\)</span>.</p>
+<p><em><strong>Inductive step</strong></em>: for some $\phi$, we assume that all proper subformulae of $\phi$ hold the result as the inductive hypothesis.</p>
+<p><em>Case 1</em>: $\phi$ is the form of $\neg\psi$. Clearly hold by definition and completeness of $\Gamma$.</p>
+<p><em>Case 2</em>: $\phi$ is the form $\psi \rightarrow \theta$.</p>
 <blockquote>
-<p><span class="math inline">\(\mathcal{M \vDash}\phi\)</span> i.e. <span class="math inline">\(\mathcal{M \vDash}\psi \rightarrow \theta\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\mathcal{M \vDash \neg}\psi\)</span> or <span class="math inline">\(\mathcal{M \vDash}\theta\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \neg\psi\)</span> or <span class="math inline">\(\Gamma \vdash \theta\)</span> (by the inductive hypothesis).</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \psi \rightarrow \theta\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \phi\)</span>.</p>
+<p>$\mathcal{M \vDash}\phi$ i.e. $\mathcal{M \vDash}\psi \rightarrow \theta$.</p>
+<p>(⇔) $\mathcal{M \vDash \neg}\psi$ or $\mathcal{M \vDash}\theta$.</p>
+<p>(⇔) $\Gamma \vdash \neg\psi$ or $\Gamma \vdash \theta$ (by the inductive hypothesis).</p>
+<p>(⇔) $\Gamma \vdash \psi \rightarrow \theta$.</p>
+<p>(⇔) $\Gamma \vdash \phi$.</p>
 </blockquote>
-<p><em>Case 3</em>: <span class="math inline">\(\phi\)</span> is the form <span class="math inline">\(\forall x\psi\)</span>, and, WLOG, we suppose the variables of <span class="math inline">\(\psi\)</span> is <span class="math inline">\((\tau_{1},\tau_{2},\ldots,\tau_{n - 1},\ x)\)</span>.</p>
+<p><em>Case 3</em>: $\phi$ is the form $\forall x\psi$, and, WLOG, we suppose the variables of $\psi$ is $(\tau_{1},\tau_{2},\ldots,\tau_{n - 1},\ x)$.</p>
 <blockquote>
-<p><span class="math inline">\(\mathcal{M \vDash}\phi\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span>, <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\phi\)</span> i.e. <span class="math inline">\(\mathcal{M} \vDash_{\varsigma}\forall x\psi\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\varsigma\)</span> and <span class="math inline">\(\lbrack c\rbrack \in A\)</span>, <span class="math inline">\(\mathcal{M} \vDash_{\varsigma(i/\lbrack c\rbrack)}\psi\)</span>.</p>
-<p>(⇔) For any <span class="math inline">\(\lbrack c\rbrack \in A\)</span>, <span class="math inline">\(\Gamma \vdash \psi(\tau_{1},\tau_{2},\ldots,\tau_{n - 1},c)\)</span> (by the inductive hypothesis).</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \forall x\psi\)</span>.</p>
-<p>(⇔) <span class="math inline">\(\Gamma \vdash \phi\)</span>.</p>
+<p>$\mathcal{M \vDash}\phi$.</p>
+<p>(⇔) For any $\varsigma$, $\mathcal{M} \vDash_{\varsigma}\phi$ i.e. $\mathcal{M} \vDash_{\varsigma}\forall x\psi$.</p>
+<p>(⇔) For any $\varsigma$ and $\lbrack c\rbrack \in A$, $\mathcal{M} \vDash_{\varsigma(i/\lbrack c\rbrack)}\psi$.</p>
+<p>(⇔) For any $\lbrack c\rbrack \in A$, $\Gamma \vdash \psi(\tau_{1},\tau_{2},\ldots,\tau_{n - 1},c)$ (by the inductive hypothesis).</p>
+<p>(⇔) $\Gamma \vdash \forall x\psi$.</p>
+<p>(⇔) $\Gamma \vdash \phi$.</p>
 </blockquote>
-<p>So, for any <span class="math inline">\(\phi\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, <span class="math inline">\(\mathcal{M \vDash}\phi\)</span>, <em>iff</em> <span class="math inline">\(\Gamma \vdash \phi\)</span>.}</p>
+<p>So, for any $\phi$ in $\mathcal{L}$, $\mathcal{M \vDash}\phi$, <em>iff</em> $\Gamma \vdash \phi$.}</p>
 </blockquote>
-<h2 id="completeness-theorem">Completeness Theorem</h2>
-<p>If <span class="math inline">\(\Gamma \vDash \phi\)</span>, then <span class="math inline">\(\Gamma \vdash \phi\)</span> where <span class="math inline">\(\phi\)</span> is a sentence in <span class="math inline">\(\mathcal{L}_{\text{CPL}}\)</span> and <span class="math inline">\(\Gamma\)</span> is a set of sentences in <span class="math inline">\(\mathcal{L}_{\text{CPL}}\)</span>.</p>
+<h2 id="Completeness-Theorem"><a class="header-anchor" href="#Completeness-Theorem">¶</a>Completeness Theorem</h2>
+<p>If $\Gamma \vDash \phi$, then $\Gamma \vdash \phi$ where $\phi$ is a sentence in $\mathcal{L}<em>{\text{CPL}}$ and $\Gamma$ is a set of sentences in $\mathcal{L}</em>{\text{CPL}}$.</p>
 <blockquote>
-<p><strong><em>Proof.</em></strong></p>
-<p>Suppose <span class="math inline">\(\Gamma \vDash \phi\)</span> but <span class="math inline">\(\Gamma \nvdash \phi\)</span>.</p>
-<p>(⇒) <span class="math inline">\(\Gamma \cup \left\{ \neg\phi \right\}\)</span> is constant.</p>
-<p>(⇒) There is a consistent complete Henkin theory <span class="math inline">\(\Gamma^{*}\)</span> in <span class="math inline">\({\mathcal{L}_{\text{CPL}}}^{+}\)</span> contains <span class="math inline">\(\Gamma \cup \left\{ \neg\phi \right\}\)</span> (by ).</p>
-<p>(⇒) There is a model <span class="math inline">\(\mathcal{M}\)</span> such that <span class="math inline">\(\mathcal{M \vDash}\Gamma \cup \left\{ \neg\phi \right\}\)</span> in <span class="math inline">\({\mathcal{L}_{\text{CPL}}}^{+}\)</span> (by ). But it is impossible: if <span class="math inline">\(\Gamma \vDash \phi\)</span> in <span class="math inline">\(\mathcal{L}\)</span>, then <span class="math inline">\(\Gamma \vDash \phi\)</span> in <span class="math inline">\(\mathcal{L}^{+}\)</span>.</p>
-<p>So, <span class="math inline">\(\Gamma \vdash \phi\)</span>.</p>
+<p><em><strong>Proof.</strong></em></p>
+<p>Suppose $\Gamma \vDash \phi$ but $\Gamma \nvdash \phi$.</p>
+<p>(⇒) $\Gamma \cup \left{ \neg\phi \right}$ is constant.</p>
+<p>(⇒) There is a consistent complete Henkin theory $\Gamma^{*}$ in ${\mathcal{L}_{\text{CPL}}}^{+}$ contains $\Gamma \cup \left{ \neg\phi \right}$ (by \textbf{extension lemma}).</p>
+<p>(⇒) There is a model $\mathcal{M}$ such that $\mathcal{M \vDash}\Gamma \cup \left{ \neg\phi \right}$ in ${\mathcal{L}_{\text{CPL}}}^{+}$ (by \textbf{model existence lemma}). But it is impossible: if $\Gamma \vDash \phi$ in $\mathcal{L}$, then $\Gamma \vDash \phi$ in $\mathcal{L}^{+}$.</p>
+<p>So, $\Gamma \vdash \phi$.</p>
 </blockquote>
 <hr />
 <p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p>
