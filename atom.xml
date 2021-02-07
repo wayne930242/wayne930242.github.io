@@ -85,9 +85,9 @@
     <category term="TRPG" scheme="http://example.com/categories/TRPG/"/>
     
     
-    <category term="守密人" scheme="http://example.com/tags/%E5%AE%88%E5%AF%86%E4%BA%BA/"/>
-    
     <category term="GM" scheme="http://example.com/tags/GM/"/>
+    
+    <category term="守密人" scheme="http://example.com/tags/%E5%AE%88%E5%AF%86%E4%BA%BA/"/>
     
   </entry>
   
@@ -327,9 +327,9 @@
     <category term="TRPG" scheme="http://example.com/categories/TRPG/"/>
     
     
-    <category term="CoC" scheme="http://example.com/tags/CoC/"/>
-    
     <category term="GM" scheme="http://example.com/tags/GM/"/>
+    
+    <category term="CoC" scheme="http://example.com/tags/CoC/"/>
     
   </entry>
   
@@ -376,9 +376,9 @@
     <category term="TRPG" scheme="http://example.com/categories/TRPG/"/>
     
     
-    <category term="CoC" scheme="http://example.com/tags/CoC/"/>
-    
     <category term="GM" scheme="http://example.com/tags/GM/"/>
+    
+    <category term="CoC" scheme="http://example.com/tags/CoC/"/>
     
   </entry>
   
