@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/favicon/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=EB Garamond:300,300italic,400,400italic,700,700italic|Noto Sans TC:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="守密人（Keeper、KP）為了一場遊戲存在。一場遊戲可能只包括一次聚會（我們稱這叫「單發（one shot）團」），也可能包括十次甚至三十次的聚會（我們稱這叫作「戰役」）。 對於一場遊戲而言，守密人有許多足以支配故事發展的權力。因此守密人往往認為，自己需要為遊戲的體驗負責。一方面來說，這是對的，守密人對於遊戲體驗至關重要。但另一方面來說，守密人如果字面上過度延伸這樣的教條，他有可能反而誤入歧途">
+<meta property="og:type" content="article">
+<meta property="og:title" content="序、守密人的工作">
+<meta property="og:url" content="http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/index.html">
+<meta property="og:site_name" content="偉恩與咖啡">
+<meta property="og:description" content="守密人（Keeper、KP）為了一場遊戲存在。一場遊戲可能只包括一次聚會（我們稱這叫「單發（one shot）團」），也可能包括十次甚至三十次的聚會（我們稱這叫作「戰役」）。 對於一場遊戲而言，守密人有許多足以支配故事發展的權力。因此守密人往往認為，自己需要為遊戲的體驗負責。一方面來說，這是對的，守密人對於遊戲體驗至關重要。但另一方面來說，守密人如果字面上過度延伸這樣的教條，他有可能反而誤入歧途">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/coc7.jpg">
+<meta property="article:published_time" content="2020-08-17T04:28:40.000Z">
+<meta property="article:modified_time" content="2021-02-26T06:29:09.611Z">
+<meta property="article:author" content="洪偉 Wei Hung">
+<meta property="article:tag" content="CoC 守密人指南">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/coc7.jpg">
+
+<link rel="canonical" href="http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>序、守密人的工作 | 偉恩與咖啡</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61272067-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-61272067-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="偉恩與咖啡" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">偉恩與咖啡</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">哲學、TRPG、雜談</p>
+      <a>
+        <img class="custom-logo-image" src="/avatar.jpg" alt="偉恩與咖啡">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="https://about.me/wayne930242" rel="noopener" target="_blank"><i class="fas fa-feather-alt fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-哲學">
+
+    <a href="/categories/philosophy/" rel="section"><i class="fas fa-coffee fa-fw"></i>哲學</a>
+
+  </li>
+        <li class="menu-item menu-item-trpg">
+
+    <a href="/categories/TRPG/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>TRPG</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.png">
+      <meta itemprop="name" content="洪偉 Wei Hung">
+      <meta itemprop="description" content="哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="偉恩與咖啡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          序、守密人的工作
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-08-17 12:28:40" itemprop="dateCreated datePublished" datetime="2020-08-17T12:28:40+08:00">2020-08-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-02-26 14:29:09" itemprop="dateModified" datetime="2021-02-26T14:29:09+08:00">2021-02-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TRPG/" itemprop="url" rel="index"><span itemprop="name">TRPG</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <img data-src="/img/coc7.jpg" class="">
+<p>守密人（Keeper、KP）為了一場遊戲存在。一場遊戲可能只包括一次聚會（我們稱這叫「單發（one shot）團」），也可能包括十次甚至三十次的聚會（我們稱這叫作「戰役」）。</p>
+<p>對於一場遊戲而言，守密人有許多足以支配故事發展的權力。因此守密人往往認為，自己需要為遊戲的體驗負責。一方面來說，這是對的，守密人對於遊戲體驗至關重要。但另一方面來說，守密人如果字面上過度延伸這樣的教條，他有可能反而誤入歧途，因為他弄錯了自己的任務：他是為了一場遊戲存在的，他並不是遊戲本身。</p>
+<p>要釐清這問題怎麼發生的、以及後果是什麼，我們要先澄清，究竟我們正在進行的是怎樣的一場遊戲。</p>
+<a id="more"></a>
+<p>一些初步接觸 TRPG 的玩家，可能會這樣類比：「GM（遊戲主持人）就像是你玩電腦遊戲的時候的電腦」。這說法如果是對的，那大概後面還要加上一句「但是是性能比較差的電腦」。對剛入門的玩家來說，這或許是簡單易懂的說法，但在實務上，會造成一些怪問題。</p>
+<p><em>首先</em>，這混淆了 TRPG 的遊戲性。電腦遊戲的遊戲體驗來自於遊戲設計師所提供的介面、畫面、故事、和機制，但 TRPG 不是：玩家同樣是故事的創造者。GM 並不是提供選項來給玩家選擇，相反地，GM 在將場景描述完後，將「如何回應」的問題留給玩家的想像，而不是遊戲的選擇。聰明地玩遊戲，在 TRPG 裡面有完全不同的意義（見第 x 章）。</p>
+<p><em>其次</em>，因為混淆遊戲性，這也搞錯了 GM 的工作。GM 既不是遊戲設計者，也不是遊戲本身。GM 是另外一名玩家，共同參與一場遊戲。在這場遊戲中，GM 的工作有四個：維護規則（見第 x 章）、確保出軌範圍（見第 x 章）、導入故事資源（見第 x 章）、扮演世界（見第 x 章）。由於 GM 是一名玩家，他也有必須遵守的規則（見第 x 章），這個規則並非完全是由 GM 頒布，而應由所有團員共同提供。</p>
+<p><em>其三</em>，這混淆了建立遊戲的工作。我們在玩電腦遊戲時，如果遇到了遊戲體驗不佳的情況，我們如果不是因為自己真的不適合這個遊戲（難度太高、不喜歡這種類型），我們通常認為，是遊戲設計得不好。這假設了，一個設計優良的遊戲，對遊玩方式合乎設計常規的玩家，擔保了好的遊戲體驗。TRPG 也是如此，要為差勁的遊戲找出問題，要從遊戲上面找問題，是看規則、玩法、介面等是否有問題。GM 是主持人，而不是遊戲的設計者（見第 x 章）。</p>
+<p>我所提倡的這種觀點，並非否定 GM 的遊戲技術對遊戲有重大影響，也不是在說明「玩家也應該對遊戲體驗負責」的陳腔濫調，而是進一步指出，GM 應該將這兩件事情分開來思考：<em>遊戲技術</em> 和 <em>遊戲經營</em>。</p>
+<p><em>遊戲技術</em> 著重在帶領遊戲的技術性問題：良好地描述場景、熟悉遊戲規則、熟悉故事資源、掌握故事弧線、帶出故事氛圍、準備背景音樂和場景圖、善用酷炫的遊戲工具等（這些技術的說明在第 x 章到第 x 章之間）。</p>
+<p><em>遊戲經營</em> 則是建立遊戲所需的工作：帶出玩家的遊戲意識（協助他們著眼於遊玩策略）、良好地回應玩家的反應、與團員一同經營真實感、作出讓人服氣的判決、反省後設規則、讓玩家參與遊戲設計等（關於經營的說明在第 x 章到第 x 章之間）。</p>
+<p>在這個系列的文章中，我會一步步說明這些技術和經營工作的細節，並且釐清那些經常被混淆、忽略、或難以釐清的部分。</p>
+<p>在開始前，希望你已經進行過幾次遊戲，並且自己試著帶領過幾次遊戲（不用太多）。並且手上最好至少有一份 CoC 入門版規則，當然，核心規則更好。</p>
+<blockquote>
+<p>下一篇：<a href="/2020/09/16/1-trpg-basic/">一、TRPG 是怎樣的遊戲？</a></p>
+</blockquote>
+<hr />
+<p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.patreon.com/weihung"><i class="fab fa-patreon"></i> 定期支持（patreon）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.paypal.com/pools/c/8jLP7Wsi80"><i class="fab fa-paypal"></i> 單次支持（paypal）</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wayne930242">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.plurk.com/wayne930242">
+            <span class="icon">
+              <i class="fas fa-parking"></i>
+            </span>
+
+            <span class="label">Plurk</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/CoC-%E5%AE%88%E5%AF%86%E4%BA%BA%E6%8C%87%E5%8D%97/" rel="tag"># CoC 守密人指南</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/15/PL/make-character-round/" rel="prev" title="角色太平面怎麼辦——讓角色立體的幾個建議">
+      <i class="fa fa-chevron-left"></i> 角色太平面怎麼辦——讓角色立體的幾個建議
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/16/systems/coc/KP-guidebook/1-trpg-basic/" rel="next" title="一、TRPG 是怎樣的遊戲？">
+      一、TRPG 是怎樣的遊戲？ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="洪偉 Wei Hung"
+      src="/logo.png">
+  <p class="site-author-name" itemprop="name">洪偉 Wei Hung</p>
+  <div class="site-description" itemprop="description">哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wayne930242" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wayne930242@gmail.com" title="E-Mail → mailto:wayne930242@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wayne930242" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/wayne930242" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.plurk.com/wayne930242" title="Plurk → https:&#x2F;&#x2F;www.plurk.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fas fa-parking fa-fw"></i>Plurk</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">洪偉 Wei Hung</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://waynehtw.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/";
+    this.page.identifier = "2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/";
+    this.page.title = "序、守密人的工作";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://waynehtw.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/favicon/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=EB Garamond:300,300italic,400,400italic,700,700italic|Noto Sans TC:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="遊戲主持人（GM）安排場景，提供玩家角色參與故事的框架。然而場景內要多緊湊？過場如何安排？場景如何定位？如何處理角色的即興行動？如何讓玩家融入場景？ 我將這些問題稱為「控場問題」。 控場，是一種綜合技巧，用來讓遊戲順利前進，讓節奏緊弛有度。好的控場不僅讓玩家保持興味、讓故事順利推進，同時還能為遊戲加料，並為故事增添印象深刻的記憶點。 控場到底該怎麼做？要注意什麼？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何讓玩家融入場景——談「控場」的理論與技巧">
+<meta property="og:url" content="http://example.com/2020/02/07/GM/control-scene/index.html">
+<meta property="og:site_name" content="偉恩與咖啡">
+<meta property="og:description" content="遊戲主持人（GM）安排場景，提供玩家角色參與故事的框架。然而場景內要多緊湊？過場如何安排？場景如何定位？如何處理角色的即興行動？如何讓玩家融入場景？ 我將這些問題稱為「控場問題」。 控場，是一種綜合技巧，用來讓遊戲順利前進，讓節奏緊弛有度。好的控場不僅讓玩家保持興味、讓故事順利推進，同時還能為遊戲加料，並為故事增添印象深刻的記憶點。 控場到底該怎麼做？要注意什麼？">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/Chicken_egg_spotlight.jpg">
+<meta property="article:published_time" content="2020-02-07T09:19:10.000Z">
+<meta property="article:modified_time" content="2021-02-26T06:30:56.983Z">
+<meta property="article:author" content="洪偉 Wei Hung">
+<meta property="article:tag" content="GM技巧">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/Chicken_egg_spotlight.jpg">
+
+<link rel="canonical" href="http://example.com/2020/02/07/GM/control-scene/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>如何讓玩家融入場景——談「控場」的理論與技巧 | 偉恩與咖啡</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61272067-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-61272067-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="偉恩與咖啡" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">偉恩與咖啡</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">哲學、TRPG、雜談</p>
+      <a>
+        <img class="custom-logo-image" src="/avatar.jpg" alt="偉恩與咖啡">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="https://about.me/wayne930242" rel="noopener" target="_blank"><i class="fas fa-feather-alt fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-哲學">
+
+    <a href="/categories/philosophy/" rel="section"><i class="fas fa-coffee fa-fw"></i>哲學</a>
+
+  </li>
+        <li class="menu-item menu-item-trpg">
+
+    <a href="/categories/TRPG/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>TRPG</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/07/GM/control-scene/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.png">
+      <meta itemprop="name" content="洪偉 Wei Hung">
+      <meta itemprop="description" content="哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="偉恩與咖啡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          如何讓玩家融入場景——談「控場」的理論與技巧
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-02-07 17:19:10" itemprop="dateCreated datePublished" datetime="2020-02-07T17:19:10+08:00">2020-02-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-02-26 14:30:56" itemprop="dateModified" datetime="2021-02-26T14:30:56+08:00">2021-02-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TRPG/" itemprop="url" rel="index"><span itemprop="name">TRPG</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/07/GM/control-scene/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/07/GM/control-scene/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <img data-src="/img/Chicken_egg_spotlight.jpg" class="">
+<p>遊戲主持人（GM）安排場景，提供玩家角色參與故事的框架。然而場景內要多緊湊？過場如何安排？場景如何定位？如何處理角色的即興行動？如何讓玩家融入場景？</p>
+<p>我將這些問題稱為「控場問題」。</p>
+<p>控場，是一種綜合技巧，用來讓遊戲順利前進，讓節奏緊弛有度。好的控場不僅讓玩家保持興味、讓故事順利推進，同時還能為遊戲加料，並為故事增添印象深刻的記憶點。</p>
+<p>控場到底該怎麼做？要注意什麼？</p>
+<a id="more"></a>
+<h2 id="場景行進與聚焦">場景：行進與聚焦</h2>
+<p>最基本的控場目標有兩種。一種關於「如何讓遊戲推進到場景」，一種關於「如何整頓場景以讓角色能互動」。我將前者稱之為「<strong>行進</strong>」，後者稱之為「<strong>聚焦</strong>」。</p>
+<p>兩種控場目標，事實上都關乎場景的基本概念。什麼是場景？指玩家角色<strong>能夠進行一段互動</strong>的環境狀態。</p>
+<p>什麼叫「能夠互動」？這包含三個不同環節：</p>
+<ul>
+<li><strong>環境條件</strong>：在場景中具備明確的、玩家明白如何互動的人、事、物。</li>
+<li><strong>場景意識</strong>：有讓玩家明白該以什麼態度參與場景的充分提示。</li>
+<li><strong>場景潛力</strong>：場景有可發展的戲劇化潛力。我們期待和玩家在這時空互動。</li>
+</ul>
+<p>缺少了任何一環的，都無法構成一個場景，只是非場景：缺乏環境條件會造成玩家的困窘，缺乏場景意識會造成混亂，缺乏場景潛力會讓故事變得冗長。</p>
+<p><strong>行進</strong>的目的，是為了跳過非場景通往場景，將故事的主軸推出背景。而<strong>聚焦</strong>是為了統整場景意識，讓場景潛力能從場景的陰暗處浮出光明。</p>
+<p>在本文中，我會介紹兩種常用的技巧，並說明這兩種技巧的使用有什麼該注意的事：<strong>進行總結</strong>與<strong>打光</strong>。</p>
+<h2 id="控場技巧進行總結">控場技巧：進行總結</h2>
+<p>場景以緊湊互動進行，相比之下，<strong>總結</strong>有大幅的省略與精簡。它就像快轉，讓玩家略過那些他們並不需要花費心力的環境狀態。</p>
+<p>但即便是為了<strong>行進</strong>，總結也不是「跳過」，它必須包含足夠豐富的動態樣式與靜態細節，而忽略那些在長時間中可被忽略的動態細節。這是用來<strong>行進</strong>的一個總結，我們可以來看看它的功能：</p>
+<blockquote>
+<p>好，那麼⋯⋯ Tommy 打算在圖書館花費一個下午研究《無名祭祀書》。他將許多厚重陳舊的參考書籍搬到大英博物館圖書館的個人座位上。一頁一頁翻過，除了鋼筆摩擦的聲音，和他自己越來越粗重的呼吸聲外，空無一人的地下室，安靜地令人瘋狂。不知道時間過了多久。終於，他明白了這本書令人訝異的、近乎真實的可怕內容。他的頭腦一片混亂⋯⋯（場景開始）</p>
+</blockquote>
+<p>首先，透過主持人的刻畫，玩家會更明白角色的處境，也更明白角色該如何扮演、敘述以及充實細節。如果在面團，這部份盡量和玩家頻繁眼神交流，確保他認為這樣的描述是妥當的。</p>
+<p>其次，它能襯托出下個場景的脈絡，並構成其氛圍不可或缺的一部分。</p>
+<p>最後，它補完了故事弧線。在行進的過程中，故事逐漸地變得高漲。</p>
+<p>總結也可以用在聚焦上：</p>
+<blockquote>
+<p>那我稍微總結一下：Tommy 將水杯裡面的水用力潑在 John 的臉上（看向 Tommy 的玩家），Jane 同時對著 John 大罵（看向 Jane 的玩家）。在咖啡廳裡，你們引起了許多人的注意和關切。他們竊竊私語。你們的眼睛直直盯著 John 。他拿出手帕，打算將臉上的水擦乾。他嘴中發出了怪異的短促嘟喃聲。你們依稀聽到一段怪異音節，從雜亂的嘟噥聲中浮出。「奈亞拉托提普」，你們清楚聽見了那令人作嘔的⋯⋯（場景繼續）</p>
+</blockquote>
+<h2 id="控場技巧打光">控場技巧：打光</h2>
+<p>在場景中，主持人除了明白環境的被動性外，也該明白參與者的能動性。環境加上參與者，才決定了場景的潛力。</p>
+<p>主持人必須明確將聚光燈打在某位（或某幾位）玩家角色上，讓場景圍繞著特定的角色進行，而讓其餘的角色成為協助者或是背景。</p>
+<p>以下是一些常見的打光模式：</p>
+<ul>
+<li><strong>獨白</strong>：在這個場景中，某角色的心境轉折與恐懼應該被強調。可以將聚光燈單一角色身上，讓玩家闡述或描述角色情緒。</li>
+<li><strong>情境劇</strong>：在這個場景中應該強調角色的互動。將一個大聚光燈打在關切此問題的數名角色上。包括戰鬥、人際互動都是屬於這種類型。</li>
+<li><strong>挑戰或調查</strong>：如果有角色的能力或處境，有利於解決任務或進行調查，將聚光燈打在他和環境上。就像將環境與氛圍當成另外一個角色。</li>
+</ul>
+<p>打光的方式很多，有時候只要簡單地喊出角色的名字，或是要問玩家「想要讓角色做什麼」就行。有些時候，需要伴隨一段總結，或在場外直說「OK，我想現在應該是把光打在 Tommy 身上的時候了。」</p>
+<p>更細緻的主持，甚至可以思考如何平分聚光燈，並透過逐步建立場景的方式帶領玩家互動，讓玩家在一步步引導下獲得扮演進步和創作樂趣。</p>
+<h2 id="結語">結語</h2>
+<p>控場是基礎而實用的觀念和技巧，有助於協助讓玩家有良好、刺激、無冷場的遊戲體驗。熟練控場，能讓遊戲有更多印象深刻的場景與記憶點，減少玩家的糾結、困惑和混亂。讓遊戲的選擇更加自由，但同時又能抓住遊戲的主題與風格。</p>
+<p>如果你是一名有經驗的主持人，你可能已經在頻繁地使用這篇文章中提到的技巧了。如果是這樣，希望這篇文章可以給你一些對於這種經驗的在觀念上的更深入的思考。</p>
+<p>如果你是經驗較少的主持人，你可以開始練習了。</p>
+<hr />
+<p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.patreon.com/bePatron?u=11250676" data-patreon-widget-type="become-patron-button">成為我的 Patron ！</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></li>
+<li><ul>
+<li><a target="_blank" rel="noopener" href="https://paypal.me/wayne930242"><i class="fab fa-paypal"></i> 單次支持（paypal）</a></li>
+</ul></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wayne930242">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.plurk.com/wayne930242">
+            <span class="icon">
+              <i class="fas fa-parking"></i>
+            </span>
+
+            <span class="label">Plurk</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/GM%E6%8A%80%E5%B7%A7/" rel="tag"># GM技巧</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/04/phlosophy/dogs-eat-logic/" rel="prev" title="「你的邏輯被狗吃了嗎？」談普通人的邏輯學">
+      <i class="fa fa-chevron-left"></i> 「你的邏輯被狗吃了嗎？」談普通人的邏輯學
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/05/GM/information-management/" rel="next" title="談 CoC 的情報管理">
+      談 CoC 的情報管理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="洪偉 Wei Hung"
+      src="/logo.png">
+  <p class="site-author-name" itemprop="name">洪偉 Wei Hung</p>
+  <div class="site-description" itemprop="description">哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wayne930242" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wayne930242@gmail.com" title="E-Mail → mailto:wayne930242@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wayne930242" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/wayne930242" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.plurk.com/wayne930242" title="Plurk → https:&#x2F;&#x2F;www.plurk.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fas fa-parking fa-fw"></i>Plurk</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">洪偉 Wei Hung</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'http://example.com/2020/02/07/GM/control-scene/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://waynehtw.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://example.com/2020/02/07/GM/control-scene/";
+    this.page.identifier = "2020/02/07/GM/control-scene/";
+    this.page.title = "如何讓玩家融入場景——談「控場」的理論與技巧";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://waynehtw.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
