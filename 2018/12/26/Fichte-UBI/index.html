@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/favicon/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.loli.net/css?family=EB Garamond:300,300italic,400,400italic,700,700italic|Noto Sans TC:300,300italic,400,400italic,700,700italic|Noto Serif TC:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="每到週日的晚上，你倒在電腦前、被窩裡、沙發上，等待週一。到了那時，你必須勞動，去做那些你並不那麼喜歡的事情。有什麼比這更苦悶的時刻嗎？ 我們一週犧牲40小時的自由，只是為了生活。不只是為了存活，也為了享用我們值得的自由：旅遊與吃美食、來瓶好酒抽抽水菸、看《波希米亞狂想曲》、花點時間參與政治活動。 當我們勞動，我們得到金錢作為報酬，同時為社會生產出更多產品。在人們的勞動下，金錢可以換取的產品變得更">
+<meta property="og:type" content="article">
+<meta property="og:title" content="國家應該免費給你錢？談費希特的財產權概念">
+<meta property="og:url" content="http://example.com/2018/12/26/Fichte-UBI/index.html">
+<meta property="og:site_name" content="偉恩與咖啡">
+<meta property="og:description" content="每到週日的晚上，你倒在電腦前、被窩裡、沙發上，等待週一。到了那時，你必須勞動，去做那些你並不那麼喜歡的事情。有什麼比這更苦悶的時刻嗎？ 我們一週犧牲40小時的自由，只是為了生活。不只是為了存活，也為了享用我們值得的自由：旅遊與吃美食、來瓶好酒抽抽水菸、看《波希米亞狂想曲》、花點時間參與政治活動。 當我們勞動，我們得到金錢作為報酬，同時為社會生產出更多產品。在人們的勞動下，金錢可以換取的產品變得更">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/fichte-bui.jpg">
+<meta property="article:published_time" content="2018-12-26T08:41:51.000Z">
+<meta property="article:modified_time" content="2021-02-26T06:28:09.629Z">
+<meta property="article:author" content="洪偉 Wei Hung">
+<meta property="article:tag" content="政治哲學">
+<meta property="article:tag" content="費希特">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/fichte-bui.jpg">
+
+<link rel="canonical" href="http://example.com/2018/12/26/Fichte-UBI/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>國家應該免費給你錢？談費希特的財產權概念 | 偉恩與咖啡</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61272067-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-61272067-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="偉恩與咖啡" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">偉恩與咖啡</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">哲學、TRPG、雜談</p>
+      <a>
+        <img class="custom-logo-image" src="/avatar.jpg" alt="偉恩與咖啡">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="https://about.me/wayne930242" rel="noopener" target="_blank"><i class="fas fa-feather-alt fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-哲學">
+
+    <a href="/categories/philosophy/" rel="section"><i class="fas fa-coffee fa-fw"></i>哲學</a>
+
+  </li>
+        <li class="menu-item menu-item-trpg">
+
+    <a href="/categories/TRPG/" rel="section"><i class="fas fa-dice-d20 fa-fw"></i>TRPG</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fas fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/12/26/Fichte-UBI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.png">
+      <meta itemprop="name" content="洪偉 Wei Hung">
+      <meta itemprop="description" content="哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="偉恩與咖啡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          國家應該免費給你錢？談費希特的財產權概念
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2018-12-26 16:41:51" itemprop="dateCreated datePublished" datetime="2018-12-26T16:41:51+08:00">2018-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-02-26 14:28:09" itemprop="dateModified" datetime="2021-02-26T14:28:09+08:00">2021-02-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/philosophy/" itemprop="url" rel="index"><span itemprop="name">philosophy</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2018/12/26/Fichte-UBI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/26/Fichte-UBI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <img data-src="/img/fichte-bui.jpg" class="">
+<p>每到週日的晚上，你倒在電腦前、被窩裡、沙發上，等待週一。到了那時，你必須勞動，去做那些你並不那麼喜歡的事情。有什麼比這更苦悶的時刻嗎？</p>
+<p>我們一週犧牲40小時的自由，只是為了生活。不只是為了存活，也為了享用我們值得的自由：旅遊與吃美食、來瓶好酒抽抽水菸、看《波希米亞狂想曲》、花點時間參與政治活動。</p>
+<p>當我們勞動，我們得到金錢作為報酬，同時為社會生產出更多產品。在人們的勞動下，金錢可以換取的產品變得更豐富，我們的生活更便利與富足。</p>
+<p>我們所在的社會，至少是一個這樣的經濟共同體。但還不只如此。</p>
+<a id="more"></a>
+<h2 id="費希特國家應介入貧窮">費希特：國家應介入貧窮</h2>
+<p>要獲得金錢、使用金錢、享受生活，理想上，要以國家保護的自由作為條件，包括：我知道的錢不會被搶、當我付錢時有辦法買到東西、我不會在去看電影的路上被殺掉。</p>
+<p>為了這樣的目的，我們將一部分金錢交給政府，讓政府保障我們的金錢，更廣義地說，保障我們的自由。</p>
+<p>但即使是這樣，我們也不見得就可以擁有自由。在我們之中，有些人並不是那麼幸運或是有能力，他們成為了遊民、乞丐。那些在貧窮線以下的人，就連存活都成了問題。</p>
+<p>如果我們認為「國家應該幫助貧窮者」，我們就有了福利國家的理念。但為什麼國家可以這麼做？為什麼社會可以向富人強制徵收財產來援助窮人？</p>
+<p>康德的後繼者之一，費希特（Johann Gottlieb Fichte），在18世紀末、19世紀初時給了這樣的一個論證：</p>
+<ol type="1">
+<li>財產權是包括共同體所有成員在內的契約；</li>
+<li>財產權契約以「成員都能依財產權來存續與生活」作為主要條件，而非「成員能享用所有勞動所得」；</li>
+<li>共同體必須透過強制力確保財產權的條件，來確保契約不被取消；</li>
+<li>因此，國家有強制力及責任徵收富人的錢交給窮人。</li>
+<li>然而，為什麼財產權需要以「成員都能依財產權來存續與生活」作為主要條件？</li>
+</ol>
+<h2 id="財產權的條件我們能靠財產生活">財產權的條件：我們能靠財產生活</h2>
+<p>首先，財產權要成立，並不是你覺得自己擁有財產就夠了，還需要整個共同體的配合和認可。光是宣稱「我口袋裡有200元」，不代表你真的擁有那些錢，還得確保：這個社會同意你可以隨意處置該財產，而且只有你可以決定怎麼處置它。</p>
+<p>在費希特看來，財產權是一種全員的契約，並且是共同體中成員所必備擁有以用來永續生存的基本權利。國家有責任行使強制力確保這些權利。</p>
+<p>有些人（其他契約論者）可能就說到這裡，然而費希特更進一步指出，事實上財產權契約還有一個條件：會同意這個契約，是因為我能擁有足夠的財產，足以支持我活下去。也就是說，要是我發現我沒有勞動力來讓我獲取足夠財產，我打從一開始就不會支持財產權契約，我可能會支持另一個契約：大家都用搶的吧。</p>
+<p>因此，當我沒有足夠財產的時候，我的財產權契約就面臨取消的境況，那麼此時，費希特認為，國家就有責任以強制力介入，就像是國家有責任以強制力預防竊盜、強搶一樣。</p>
+<p>如果費希特是對的，那麼，當國家是以重視財產權的方式建立起來，「能依財產權來存續與生活」就是基本人權。</p>
+<h2 id="預防貧窮全民基本收入">預防貧窮：全民基本收入</h2>
+<p>當我們落入貧窮，其他成員會支援我們。但是我們並不想落入貧窮（因為我們也有責任透過勞動讓自己存活下去，並且幫助他人），那我們就必須勞動。</p>
+<p>但在今天，工業發達的國家出現了被稱作「技術性失業」的現象：生產技術的發展造成對人力的大幅度節約，社會上的工作不足，使得找到工作變得越來越困難。</p>
+<p>我們無法勞動。廣泛的無法勞動造成廣泛的貧窮。</p>
+<p>更清楚地說，共同體的技術性失業，明確地讓能透過勞動來防止落入貧窮的機會消失了。這個結果不只是經濟上的困境，對於費西特這類契約論者來說，也是政治哲學上的困境：技術性失業讓社會上的一大群人的財產權契約面臨失效，對於這群人來說，放棄財產權契約，接納「大家來搶吧！」契約，成為越來越理性的選項。</p>
+<p>當社會更加富裕、貧窮更加廣泛、生產效率大過社會的需求，一種新的經濟分配構想便被提出，即「全民基本收入（Unconditional Basic Income，UBI）」。並非對貧窮者發放基本生活開支，而是對所有成員發放一筆基本收入。</p>
+<p>也就是說，UBI的目的並非是補貼窮人，而是因應這個結構性的改變，透過發放一筆讓人不會落入貧窮的收入，來讓人不會因此落入貧窮。身為近年熱門的題目，UBI的倡議者也致力於回答各種擔憂，例如不勞而獲的正當性，並強調UBI可望解決一般福利政策難以觸及的問題。</p>
+<p>雖然費希特並未考慮過這種分配模式（畢竟他並未想見，機器取代人力的方式會如此發展），但其實，我們會發現這種方式要比強制徵收富人來援助窮人，更加保障他的財產權契約。福利國家是使窮人「恢復」財產權，但全民基本收入是使人根本不會落入貧窮。</p>
+<p>當康德主張「富人並不『援助』窮人，而只是把本來就該是他們的東西還給他們。」UBI說得更進一步：別讓任何人變成窮人。</p>
+<blockquote>
+<p>本文首次刊登於鳴人堂<a target="_blank" rel="noopener" href="https://opinion.udn.com/opinion/story/6685/3543662">烙哲學專欄</a>。</p>
+</blockquote>
+<hr />
+<p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://paypal.me/wayne930242"><i class="fab fa-paypal"></i> 單次支持（paypal）</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wayne930242">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.plurk.com/wayne930242">
+            <span class="icon">
+              <i class="fas fa-parking"></i>
+            </span>
+
+            <span class="label">Plurk</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%94%BF%E6%B2%BB%E5%93%B2%E5%AD%B8/" rel="tag"># 政治哲學</a>
+              <a href="/tags/%E8%B2%BB%E5%B8%8C%E7%89%B9/" rel="tag"># 費希特</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/04/28/metaphysics-of-cthulhu-mythos/" rel="prev" title="克蘇魯神話的形上學">
+      <i class="fa fa-chevron-left"></i> 克蘇魯神話的形上學
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/07/17/education/" rel="next" title="小孩的教養除了讓大人心情好一點，還能幹嘛？">
+      小孩的教養除了讓大人心情好一點，還能幹嘛？ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="洪偉 Wei Hung"
+      src="/logo.png">
+  <p class="site-author-name" itemprop="name">洪偉 Wei Hung</p>
+  <div class="site-description" itemprop="description">哲學普及與 TRPG 推廣。加上關於生活與社會的一些雜談。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wayne930242" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wayne930242@gmail.com" title="E-Mail → mailto:wayne930242@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wayne930242" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/wayne930242" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.plurk.com/wayne930242" title="Plurk → https:&#x2F;&#x2F;www.plurk.com&#x2F;wayne930242" rel="noopener" target="_blank"><i class="fas fa-parking fa-fw"></i>Plurk</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">洪偉 Wei Hung</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'http://example.com/2018/12/26/Fichte-UBI/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://waynehtw.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://example.com/2018/12/26/Fichte-UBI/";
+    this.page.identifier = "2018/12/26/Fichte-UBI/";
+    this.page.title = "國家應該免費給你錢？談費希特的財產權概念";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://waynehtw.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>

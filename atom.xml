@@ -18,8 +18,8 @@
   
   <entry>
     <title>怎麼玩《命運濃縮版》(2)：遊戲設定與角色創造</title>
-    <link href="http://example.com/2021/03/15/systems/fate-condensed/fate-condensed-2/"/>
-    <id>http://example.com/2021/03/15/systems/fate-condensed/fate-condensed-2/</id>
+    <link href="http://example.com/2021/03/15/fate-condensed-2/"/>
+    <id>http://example.com/2021/03/15/fate-condensed-2/</id>
     <published>2021-03-15T07:54:21.000Z</published>
     <updated>2021-03-15T09:48:30.114Z</updated>
     
@@ -44,12 +44,12 @@
   
   <entry>
     <title>怎麼玩《命運濃縮版》(1)：基本介紹</title>
-    <link href="http://example.com/2021/02/03/systems/fate-condensed/fate-condensed/"/>
-    <id>http://example.com/2021/02/03/systems/fate-condensed/fate-condensed/</id>
+    <link href="http://example.com/2021/02/03/fate-condensed/"/>
+    <id>http://example.com/2021/02/03/fate-condensed/</id>
     <published>2021-02-03T06:46:40.000Z</published>
-    <updated>2021-03-15T09:47:44.597Z</updated>
+    <updated>2021-03-15T09:54:12.625Z</updated>
     
-    <content type="html"><![CDATA[<img data-src="/img/Page-Header-Fate-Condensed.jpg" class=""><p>《命運（Fate）》是一個泛用系統框架，所謂一個系統是「泛用的」，我們的意思是說，它設計來讓我們進行不拘類型的遊戲。</p><a id="more"></a><p>邪惡帽子在 2013 年出版了《命運核心版（Fate Core）》與《命運快速版（Fate Accelerated）》。《核心版》是完整的《命運》規則，版本號是 4.0。到了 4 版，FATE 是那四個字的縮寫就再也不重要了。</p><p>《命運濃縮版》出版於 2020 年，雖然稱它為「濃縮」，但他並不是精簡的版本。官方將它定調成 4.5 版的《命運》。</p><p>在這系列中，我們不會談《濃縮版》與《核心版》的差異，但我會這樣說：《命運濃縮版》是一個更靈巧、優雅的遊戲，具有豐富的可玩性，能帶給參與者有趣的故事和體驗。</p><p>它很濃縮，我能用幾篇文章讓你學會怎麼玩這個遊戲：</p><ul><li><ol start="2" type="1"><li><a href="/2021/03/15/systems/fate-condensed/fate-condensed-2/">遊戲設定與角色創造</a></li></ol></li><li><ol start="3" type="1"><li>核心規則</li></ol></li><li><ol start="4" type="1"><li>挑戰、競爭與衝突</li></ol></li><li><ol start="5" type="1"><li>特技</li></ol></li><li><ol start="6" type="1"><li>成長</li></ol></li><li><ol start="7" type="1"><li>擴充規則</li></ol></li></ul><p>在這系列中，除了我會將你需要的規則完整說過一遍以外，我也會加上一些我自己的註解。我希望你看了這系列文章以後，可以不需要再回去將《核心版》看過一遍，就可以玩得非常順利。</p><h1 id="工具箱">工具箱</h1><p>預設來說，《命運》特別適合現代都市的英雄故事，但其實，我們只需要簡單的調整，就能讓《命運》適用於各種畫風的遊戲。這些調整建議，都敘述在《命運》的工具箱裡面。</p><p>最重要的工具箱是《命運系統工具箱（Fate System Toolkit）》，這可以讓你對《命運》有更多了解。其次是《命運敵人工具箱（Fate Adversary Toolkit）》，讓你可以更靈活地活用命運系統來設計場景。</p><p>《命運恐怖工具箱（Fate Horror Toolkit）》與《命運太空工具箱（Fate Space Toolkit）》則讓我們看到，可以如何幫助我們調整遊戲的畫風。</p><p>《命運》鼓勵你和你的玩家，根據你們想說的故事，來製作自己的遊戲。但一開始你並不需要這個，光是核心規則我們就已經能玩得很好了。</p><p>《命運》允許你按照你們的場景修改你們的規則。而在基礎上，也提供了這些工具書讓你們不至於走得太偏。給新手的建議是：如果你們還不熟這個系統，先不要嘗試修改太多規則，以免讓遊戲失衡和變調。</p><p>如果你們遇到困難，需要具體的建議，歡迎找我討論。</p><h1 id="開始玩以前">開始玩以前</h1><p>實體上，你需要這些東西：</p><ol type="1"><li><strong>朋友</strong>。幾個想一起說故事的人，一個輕鬆的晚上或下午。</li><li><strong>命運骰</strong>。最少有一組，但最好是每人一組。命運骰是一組四顆的六面骰子，六面是：2 個<span class="fate-font">0</span>、2 個<span class="fate-font">-</span>、2 個<span class="fate-font">+</span>。</li><li><strong>名片卡</strong>。你可能也會想用白板，但我推薦你們使用這個更傳統的工具。建議你們為此準備一隻 0.7 mm 以上的深色原子筆。</li><li><strong>命運點指示物</strong>。代表<strong>命運點</strong>（一種貨幣）的指示物，大概 30 個就很夠了。不要是能吃的東西。</li><li>一些白紙，每人一隻鉛筆，橡皮擦。</li><li><strong>角色卡與規則小抄</strong>：你可以在<a href="https://www.evilhat.com/home/fate-core-downloads/">官網</a>下載。</li></ol><p>在心理上，你需要準備：</p><ul><li><strong>輕鬆的心情</strong>。你是來說故事的，不是來爭輸贏的。</li><li><strong>積極的態度</strong>。不要讓任何人冷落你，找機會盡量參與對話。不要冷落任何人，所有人都該在同一張桌子上。</li><li><strong>規則是其次</strong>。命運的規則很讚，但記得黃金原則：「為當前的情境找出你們想玩的規則」。規則是為故事和樂趣服務的。</li></ul><p>下一篇文章，我們就來談該怎麼玩《命運濃縮版》吧。</p><hr /><p>Fate™ is a trademark of Evil Hat Productions, LLC.</p><p>The Fate Core font is © Evil Hat Productions, LLC and is used with permission. The Four Actions icons were designed by Jeremy Keller.</p><hr /><p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p><ul><li><a href="https://www.patreon.com/weihung"><i class="fab fa-patreon"></i> 定期支持（patreon）</a></li><li><a href="https://www.paypal.com/pools/c/8jLP7Wsi80"><i class="fab fa-paypal"></i> 單次支持（paypal）</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<img data-src="/img/Page-Header-Fate-Condensed.jpg" class=""><p>《命運（Fate）》是一個泛用系統框架，所謂一個系統是「泛用的」，我們的意思是說，它設計來讓我們進行不拘類型的遊戲。</p><a id="more"></a><p>邪惡帽子在 2013 年出版了《命運核心版（Fate Core）》與《命運快速版（Fate Accelerated）》。《核心版》是完整的《命運》規則，版本號是 4.0。到了 4 版，FATE 是那四個字的縮寫就再也不重要了。</p><p>《命運濃縮版》出版於 2020 年，雖然稱它為「濃縮」，但他並不是精簡的版本。官方將它定調成 4.5 版的《命運》。</p><p>在這系列中，我們不會談《濃縮版》與《核心版》的差異，但我會這樣說：《命運濃縮版》是一個更靈巧、優雅的遊戲，具有豐富的可玩性，能帶給參與者有趣的故事和體驗。</p><p>它很濃縮，我能用幾篇文章讓你學會怎麼玩這個遊戲：</p><ul><li><ol start="2" type="1"><li><a href="/2021/03/15/fate-condensed-2/">遊戲設定與角色創造</a></li></ol></li><li><ol start="3" type="1"><li>核心規則</li></ol></li><li><ol start="4" type="1"><li>挑戰、競爭與衝突</li></ol></li><li><ol start="5" type="1"><li>特技</li></ol></li><li><ol start="6" type="1"><li>成長</li></ol></li><li><ol start="7" type="1"><li>擴充規則</li></ol></li></ul><p>在這系列中，除了我會將你需要的規則完整說過一遍以外，我也會加上一些我自己的註解。我希望你看了這系列文章以後，可以不需要再回去將《核心版》看過一遍，就可以玩得非常順利。</p><h1 id="工具箱">工具箱</h1><p>預設來說，《命運》特別適合現代都市的英雄故事，但其實，我們只需要簡單的調整，就能讓《命運》適用於各種畫風的遊戲。這些調整建議，都敘述在《命運》的工具箱裡面。</p><p>最重要的工具箱是《命運系統工具箱（Fate System Toolkit）》，這可以讓你對《命運》有更多了解。其次是《命運敵人工具箱（Fate Adversary Toolkit）》，讓你可以更靈活地活用命運系統來設計場景。</p><p>《命運恐怖工具箱（Fate Horror Toolkit）》與《命運太空工具箱（Fate Space Toolkit）》則讓我們看到，可以如何幫助我們調整遊戲的畫風。</p><p>《命運》鼓勵你和你的玩家，根據你們想說的故事，來製作自己的遊戲。但一開始你並不需要這個，光是核心規則我們就已經能玩得很好了。</p><p>《命運》允許你按照你們的場景修改你們的規則。而在基礎上，也提供了這些工具書讓你們不至於走得太偏。給新手的建議是：如果你們還不熟這個系統，先不要嘗試修改太多規則，以免讓遊戲失衡和變調。</p><p>如果你們遇到困難，需要具體的建議，歡迎找我討論。</p><h1 id="開始玩以前">開始玩以前</h1><p>實體上，你需要這些東西：</p><ol type="1"><li><strong>朋友</strong>。幾個想一起說故事的人，一個輕鬆的晚上或下午。</li><li><strong>命運骰</strong>。最少有一組，但最好是每人一組。命運骰是一組四顆的六面骰子，六面是：2 個<span class="fate-font">0</span>、2 個<span class="fate-font">-</span>、2 個<span class="fate-font">+</span>。</li><li><strong>名片卡</strong>。你可能也會想用白板，但我推薦你們使用這個更傳統的工具。建議你們為此準備一隻 0.7 mm 以上的深色原子筆。</li><li><strong>命運點指示物</strong>。代表<strong>命運點</strong>（一種貨幣）的指示物，大概 30 個就很夠了。不要是能吃的東西。</li><li>一些白紙，每人一隻鉛筆，橡皮擦。</li><li><strong>角色卡與規則小抄</strong>：你可以在<a href="https://www.evilhat.com/home/fate-core-downloads/">官網</a>下載。</li></ol><p>在心理上，你需要準備：</p><ul><li><strong>輕鬆的心情</strong>。你是來說故事的，不是來爭輸贏的。</li><li><strong>積極的態度</strong>。不要讓任何人冷落你，找機會盡量參與對話。不要冷落任何人，所有人都該在同一張桌子上。</li><li><strong>規則是其次</strong>。命運的規則很讚，但記得黃金原則：「為當前的情境找出你們想玩的規則」。規則是為故事和樂趣服務的。</li></ul><p>下一篇文章，我們就來談該怎麼玩《命運濃縮版》吧。</p><hr /><p>Fate™ is a trademark of Evil Hat Productions, LLC.</p><p>The Fate Core font is © Evil Hat Productions, LLC and is used with permission. The Four Actions icons were designed by Jeremy Keller.</p><hr /><p>如果你喜歡這篇文章，請不吝用實際行動支持我：</p><ul><li><a href="https://www.patreon.com/weihung"><i class="fab fa-patreon"></i> 定期支持（patreon）</a></li><li><a href="https://www.paypal.com/pools/c/8jLP7Wsi80"><i class="fab fa-paypal"></i> 單次支持（paypal）</a></li></ul>]]></content>
     
     
     <summary type="html">&lt;img data-src=&quot;/img/Page-Header-Fate-Condensed.jpg&quot; class=&quot;&quot;&gt;
@@ -68,8 +68,8 @@
   
   <entry>
     <title>CoC 7 的追逐怎麼處理？一個解決方案</title>
-    <link href="http://example.com/2021/01/06/systems/coc/coc7chase/"/>
-    <id>http://example.com/2021/01/06/systems/coc/coc7chase/</id>
+    <link href="http://example.com/2021/01/06/coc7chase/"/>
+    <id>http://example.com/2021/01/06/coc7chase/</id>
     <published>2021-01-06T06:24:59.000Z</published>
     <updated>2021-03-15T07:45:37.100Z</updated>
     
@@ -94,8 +94,8 @@
   
   <entry>
     <title>怎麼設計遊戲導入？</title>
-    <link href="http://example.com/2020/12/18/GM/intro-to-a-game/"/>
-    <id>http://example.com/2020/12/18/GM/intro-to-a-game/</id>
+    <link href="http://example.com/2020/12/18/intro-to-a-game/"/>
+    <id>http://example.com/2020/12/18/intro-to-a-game/</id>
     <published>2020-12-18T12:09:42.000Z</published>
     <updated>2021-02-26T06:30:57.453Z</updated>
     
@@ -119,8 +119,8 @@
   
   <entry>
     <title>二、良好的對話</title>
-    <link href="http://example.com/2020/09/16/systems/coc/KP-guidebook/2-good-conversaion/"/>
-    <id>http://example.com/2020/09/16/systems/coc/KP-guidebook/2-good-conversaion/</id>
+    <link href="http://example.com/2020/09/16/2-good-conversaion/"/>
+    <id>http://example.com/2020/09/16/2-good-conversaion/</id>
     <published>2020-09-16T14:12:38.000Z</published>
     <updated>2021-02-26T06:29:10.045Z</updated>
     
@@ -142,8 +142,8 @@
   
   <entry>
     <title>一、TRPG 是怎樣的遊戲？</title>
-    <link href="http://example.com/2020/09/16/systems/coc/KP-guidebook/1-trpg-basic/"/>
-    <id>http://example.com/2020/09/16/systems/coc/KP-guidebook/1-trpg-basic/</id>
+    <link href="http://example.com/2020/09/16/1-trpg-basic/"/>
+    <id>http://example.com/2020/09/16/1-trpg-basic/</id>
     <published>2020-09-16T13:54:49.000Z</published>
     <updated>2021-02-26T06:29:09.890Z</updated>
     
@@ -165,8 +165,8 @@
   
   <entry>
     <title>序、守密人的工作</title>
-    <link href="http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/"/>
-    <id>http://example.com/2020/08/17/systems/coc/KP-guidebook/0-coc-kp-intro/</id>
+    <link href="http://example.com/2020/08/17/0-coc-kp-intro/"/>
+    <id>http://example.com/2020/08/17/0-coc-kp-intro/</id>
     <published>2020-08-17T04:28:40.000Z</published>
     <updated>2021-02-26T06:29:09.611Z</updated>
     
@@ -189,8 +189,8 @@
   
   <entry>
     <title>角色太平面怎麼辦——讓角色立體的幾個建議</title>
-    <link href="http://example.com/2020/06/15/PL/make-character-round/"/>
-    <id>http://example.com/2020/06/15/PL/make-character-round/</id>
+    <link href="http://example.com/2020/06/15/make-character-round/"/>
+    <id>http://example.com/2020/06/15/make-character-round/</id>
     <published>2020-06-15T15:24:30.000Z</published>
     <updated>2021-02-26T06:31:18.990Z</updated>
     
@@ -220,8 +220,8 @@
   
   <entry>
     <title>道歉的哲學：「因為你生氣所以我道歉」為何不妥？</title>
-    <link href="http://example.com/2020/06/12/phlosophy/how-to-apologize/"/>
-    <id>http://example.com/2020/06/12/phlosophy/how-to-apologize/</id>
+    <link href="http://example.com/2020/06/12/how-to-apologize/"/>
+    <id>http://example.com/2020/06/12/how-to-apologize/</id>
     <published>2020-06-12T07:11:21.000Z</published>
     <updated>2021-02-26T06:29:20.182Z</updated>
     
@@ -253,8 +253,8 @@
   
   <entry>
     <title>我要玩 PbtA 了！給玩家的建議</title>
-    <link href="http://example.com/2020/06/01/PL/taste-pbta/"/>
-    <id>http://example.com/2020/06/01/PL/taste-pbta/</id>
+    <link href="http://example.com/2020/06/01/taste-pbta/"/>
+    <id>http://example.com/2020/06/01/taste-pbta/</id>
     <published>2020-05-31T16:24:28.000Z</published>
     <updated>2021-02-26T06:31:18.812Z</updated>
     
@@ -276,8 +276,8 @@
   
   <entry>
     <title>CoC 衍生系統：瑞阿勒提的呼喚（Call of R&#39;Ality）</title>
-    <link href="http://example.com/2020/05/27/systems/call-of-r-ality/"/>
-    <id>http://example.com/2020/05/27/systems/call-of-r-ality/</id>
+    <link href="http://example.com/2020/05/27/call-of-r-ality/"/>
+    <id>http://example.com/2020/05/27/call-of-r-ality/</id>
     <published>2020-05-27T06:08:54.000Z</published>
     <updated>2021-02-26T06:30:02.305Z</updated>
     
@@ -335,8 +335,8 @@
   
   <entry>
     <title>談 CoC 的情報管理：範例篇</title>
-    <link href="http://example.com/2020/04/15/GM/information-management-for-example/"/>
-    <id>http://example.com/2020/04/15/GM/information-management-for-example/</id>
+    <link href="http://example.com/2020/04/15/information-management-for-example/"/>
+    <id>http://example.com/2020/04/15/information-management-for-example/</id>
     <published>2020-04-15T07:57:27.000Z</published>
     <updated>2021-02-26T06:30:57.142Z</updated>
     
@@ -361,8 +361,8 @@
   
   <entry>
     <title>The Henkin style proof of the completeness of predicate logic</title>
-    <link href="http://example.com/2020/04/07/scholar/a-proof-of-the-completeness-of-predicate-logic/"/>
-    <id>http://example.com/2020/04/07/scholar/a-proof-of-the-completeness-of-predicate-logic/</id>
+    <link href="http://example.com/2020/04/07/a-proof-of-the-completeness-of-predicate-logic/"/>
+    <id>http://example.com/2020/04/07/a-proof-of-the-completeness-of-predicate-logic/</id>
     <published>2020-04-07T11:01:03.000Z</published>
     <updated>2021-02-26T06:28:30.405Z</updated>
     
@@ -384,8 +384,8 @@
   
   <entry>
     <title>談 CoC 的情報管理</title>
-    <link href="http://example.com/2020/03/05/GM/information-management/"/>
-    <id>http://example.com/2020/03/05/GM/information-management/</id>
+    <link href="http://example.com/2020/03/05/information-management/"/>
+    <id>http://example.com/2020/03/05/information-management/</id>
     <published>2020-03-05T10:36:05.000Z</published>
     <updated>2021-02-26T06:30:57.311Z</updated>
     
@@ -410,8 +410,8 @@
   
   <entry>
     <title>如何讓玩家融入場景——談「控場」的理論與技巧</title>
-    <link href="http://example.com/2020/02/07/GM/control-scene/"/>
-    <id>http://example.com/2020/02/07/GM/control-scene/</id>
+    <link href="http://example.com/2020/02/07/control-scene/"/>
+    <id>http://example.com/2020/02/07/control-scene/</id>
     <published>2020-02-07T09:19:10.000Z</published>
     <updated>2021-02-26T06:30:56.983Z</updated>
     
@@ -435,8 +435,8 @@
   
   <entry>
     <title>「你的邏輯被狗吃了嗎？」談普通人的邏輯學</title>
-    <link href="http://example.com/2020/02/04/phlosophy/dogs-eat-logic/"/>
-    <id>http://example.com/2020/02/04/phlosophy/dogs-eat-logic/</id>
+    <link href="http://example.com/2020/02/04/dogs-eat-logic/"/>
+    <id>http://example.com/2020/02/04/dogs-eat-logic/</id>
     <published>2020-02-04T09:26:44.000Z</published>
     <updated>2021-02-26T06:29:22.663Z</updated>
     
@@ -463,8 +463,8 @@
   
   <entry>
     <title>連孔恩都認不出來的「典範轉移」真的沒問題嗎？</title>
-    <link href="http://example.com/2019/07/18/phlosophy/Paradigm-shift/"/>
-    <id>http://example.com/2019/07/18/phlosophy/Paradigm-shift/</id>
+    <link href="http://example.com/2019/07/18/Paradigm-shift/"/>
+    <id>http://example.com/2019/07/18/Paradigm-shift/</id>
     <published>2019-07-18T08:59:47.000Z</published>
     <updated>2021-02-26T06:29:36.925Z</updated>
     
@@ -493,8 +493,8 @@
   
   <entry>
     <title>薛西弗斯的人生有意義嗎？——談卡繆與荒謬</title>
-    <link href="http://example.com/2019/07/18/phlosophy/sisyphean-life/"/>
-    <id>http://example.com/2019/07/18/phlosophy/sisyphean-life/</id>
+    <link href="http://example.com/2019/07/18/sisyphean-life/"/>
+    <id>http://example.com/2019/07/18/sisyphean-life/</id>
     <published>2019-07-18T08:47:29.000Z</published>
     <updated>2021-02-26T06:29:39.219Z</updated>
     
@@ -517,8 +517,8 @@
   
   <entry>
     <title>小孩的教養除了讓大人心情好一點，還能幹嘛？</title>
-    <link href="http://example.com/2019/07/17/phlosophy/education/"/>
-    <id>http://example.com/2019/07/17/phlosophy/education/</id>
+    <link href="http://example.com/2019/07/17/education/"/>
+    <id>http://example.com/2019/07/17/education/</id>
     <published>2019-07-17T09:07:55.000Z</published>
     <updated>2021-02-26T06:29:29.236Z</updated>
     
