@@ -1233,7 +1233,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #32c8ff;
+  background: #1fc130;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2522,8 +2522,8 @@ em {
 .fate-font {
   font-family: fate;
   font-weight: 400;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
   vertical-align: top;
 }
 .big {
