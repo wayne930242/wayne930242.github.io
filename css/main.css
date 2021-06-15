@@ -1233,7 +1233,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7d3dff;
+  background: #140ae5;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2515,12 +2515,15 @@ mjx-container + br {
 }
 em {
   font-style: normal;
-  background-color: rgba(207,233,245,0.418);
+  background-color: rgba(207,233,245,0.55);
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .fate-font {
   font-family: fate;
   font-weight: 400;
-  padding: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
   vertical-align: middle;
 }
 .big {
